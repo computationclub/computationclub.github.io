@@ -30,6 +30,14 @@
     });
   };
 
+  var scrollContext = function (context, cellCount, rowCount, cellSize) {
+    var width = cellCount * cellSize, height = rowCount * cellSize;
+
+    var imageData = context.getImageData(0, cellSize, width, height - cellSize);
+    context.putImageData(imageData, 0, 0);
+    context.clearRect(0, height - cellSize, width, cellSize);
+  };
+
   exports.drawCellularAutomaton = function (options) {
     var canvas = options.canvas,
       cellSize = options.cellSize,
@@ -44,14 +52,14 @@
     var rowCount = Math.floor(canvas.height / cellSize);
     var row = 0;
 
-    var interval = window.setInterval(function () {
+    window.setInterval(function () {
       drawCells(cells, context, row, cellSize);
       cells = nextCells(cells, ruleNumber);
 
-      if (row < rowCount) {
+      if (row < rowCount - 1) {
         ++row;
       } else {
-        window.clearInterval(interval);
+        scrollContext(context, cellCount, rowCount, cellSize);
       }
     }, 1000 / rowsPerSecond);
   };
