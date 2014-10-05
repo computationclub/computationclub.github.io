@@ -4,6 +4,18 @@
 (function (exports) {
   'use strict';
 
+  var Rule = (function () {
+    var constructor = function (number) {
+      this.number = number;
+    };
+
+    constructor.prototype.apply = function (p, q, r) {
+      return !!(this.number & (1 << ((p << 2) | (q << 1) | (r << 0))));
+    };
+
+    return constructor;
+  }());
+
   var CellularAutomaton = (function () {
     var makeCells = function (cellCount) {
       var cells = [];
@@ -16,18 +28,13 @@
     };
 
     var constructor = function (options) {
-      this.ruleNumber = options.ruleNumber;
+      this.rule = new Rule(options.ruleNumber);
       this.cells = makeCells(options.cellCount);
-    };
-
-    constructor.prototype.rule = function (left, middle, right) {
-      var pattern = (left << 2) | (middle << 1) | (right << 0);
-      return !!(this.ruleNumber & (1 << pattern));
     };
 
     constructor.prototype.step = function () {
       this.cells = this.cells.map(function (middle, column) {
-        return this.rule(this.cells[column - 1], middle, this.cells[column + 1]);
+        return this.rule.apply(this.cells[column - 1], middle, this.cells[column + 1]);
       }, this);
     };
 
