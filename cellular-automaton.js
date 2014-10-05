@@ -1,4 +1,5 @@
 /* jshint bitwise: false */
+/* global window */
 
 (function (exports) {
   'use strict';
@@ -32,7 +33,8 @@
   exports.drawCellularAutomaton = function (options) {
     var canvas = options.canvas,
       cellSize = options.cellSize,
-      ruleNumber = options.ruleNumber;
+      ruleNumber = options.ruleNumber,
+      rowsPerSecond = options.rowsPerSecond;
 
     var context = canvas.getContext('2d');
 
@@ -40,10 +42,17 @@
     var cells = makeCells(cellCount);
 
     var rowCount = Math.floor(canvas.height / cellSize);
+    var row = 0;
 
-    for (var row = 0; row < rowCount; ++row) {
+    var interval = window.setInterval(function () {
       drawCells(cells, context, row, cellSize);
       cells = nextCells(cells, ruleNumber);
-    }
+
+      if (row < rowCount) {
+        ++row;
+      } else {
+        window.clearInterval(interval);
+      }
+    }, 1000 / rowsPerSecond);
   };
 }(this));
