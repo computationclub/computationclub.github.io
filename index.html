@@ -4,10 +4,22 @@
   <head>
     <meta charset="utf-8">
     <title>London Computation Club</title>
+    <script src="cellular-automaton.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        drawCellularAutomaton({
+          canvas: document.getElementById('cellular-automaton'),
+          ruleNumber: 110,
+          cellSize: 2
+        });
+      });
+    </script>
   </head>
 
   <body>
     <h1>London Computation Club</h1>
+
+    <canvas id="cellular-automaton" width="500" height="500"></canvas>
 
     <section>
       <h2>Future meetings</h2>
