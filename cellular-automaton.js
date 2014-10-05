@@ -28,7 +28,7 @@
     };
 
     var constructor = function (options) {
-      this.rule = new Rule(options.ruleNumber);
+      this.rule = options.rule;
       this.cells = makeCells(options.cellCount);
     };
 
@@ -60,14 +60,14 @@
   exports.drawCellularAutomaton = function (options) {
     var canvas = options.canvas,
       cellSize = options.cellSize,
-      ruleNumber = options.ruleNumber,
+      rule = options.rule,
       rowsPerSecond = options.rowsPerSecond;
 
     var context = canvas.getContext('2d');
 
     var cellCount = Math.floor(canvas.width / cellSize);
     var cellularAutomaton = new CellularAutomaton({
-      ruleNumber: ruleNumber,
+      rule: rule,
       cellCount: cellCount
     });
 
@@ -85,4 +85,6 @@
       }
     }, 1000 / rowsPerSecond);
   };
+
+  exports.Rule = Rule;
 }(this));

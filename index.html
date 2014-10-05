@@ -9,7 +9,7 @@
       document.addEventListener('DOMContentLoaded', function () {
         drawCellularAutomaton({
           canvas: document.getElementById('cellular-automaton'),
-          ruleNumber: 110,
+          rule: new Rule(110),
           cellSize: 2,
           rowsPerSecond: 100
         });
