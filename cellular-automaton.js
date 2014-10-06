@@ -30,6 +30,7 @@
     var constructor = function (options) {
       this.rule = options.rule;
       this.cells = makeCells(options.cellCount);
+      this.origin = this.cells.length - 1;
     };
 
     constructor.prototype.step = function () {
@@ -39,16 +40,16 @@
     };
 
     constructor.prototype.cellAt = function (column) {
-      return this.cells[column];
+      return this.cells[this.origin + column];
     };
 
     return constructor;
   }());
 
   var drawCells = function (cellularAutomaton, context, row, cellCount, cellSize) {
-    for (var column = 0; column < cellCount; ++column) {
+    for (var column = -cellCount + 1; column <= 0; ++column) {
       if (cellularAutomaton.cellAt(column)) {
-        context.fillRect(column * cellSize, row * cellSize, cellSize, cellSize);
+        context.fillRect((column + cellCount - 1) * cellSize, row * cellSize, cellSize, cellSize);
       }
     }
   };
