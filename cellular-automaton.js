@@ -17,20 +17,10 @@
   }());
 
   var CellularAutomaton = (function () {
-    var makeCells = function (cellCount) {
-      var cells = [];
-      for (var i = 0; i < cellCount; ++i) {
-        cells[i] = false;
-      }
-      cells[cells.length - 1] = true;
-
-      return cells;
-    };
-
     var constructor = function (options) {
       this.rule = options.rule;
-      this.cells = makeCells(options.cellCount);
-      this.origin = this.cells.length - 1;
+      this.cells = [true];
+      this.origin = 0;
     };
 
     constructor.prototype.step = function () {
@@ -83,10 +73,7 @@
     var context = canvas.getContext('2d');
 
     var cellCount = Math.floor(canvas.width / cellSize);
-    var cellularAutomaton = new CellularAutomaton({
-      rule: rule,
-      cellCount: cellCount
-    });
+    var cellularAutomaton = new CellularAutomaton({ rule: rule });
 
     var rowCount = Math.floor(canvas.height / cellSize);
     var row = 0;
