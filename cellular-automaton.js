@@ -38,15 +38,19 @@
       }, this);
     };
 
+    constructor.prototype.cellAt = function (column) {
+      return this.cells[column];
+    };
+
     return constructor;
   }());
 
-  var drawCells = function (cellularAutomaton, context, row, cellSize) {
-    cellularAutomaton.cells.forEach(function (cell, column) {
-      if (cell) {
+  var drawCells = function (cellularAutomaton, context, row, cellCount, cellSize) {
+    for (var column = 0; column < cellCount; ++column) {
+      if (cellularAutomaton.cellAt(column)) {
         context.fillRect(column * cellSize, row * cellSize, cellSize, cellSize);
       }
-    });
+    }
   };
 
   var scrollContext = function (context, cellCount, rowCount, cellSize) {
@@ -75,7 +79,7 @@
     var row = 0;
 
     window.setInterval(function () {
-      drawCells(cellularAutomaton, context, row, cellSize);
+      drawCells(cellularAutomaton, context, row, cellCount, cellSize);
       cellularAutomaton.step();
 
       if (row < rowCount - 1) {
