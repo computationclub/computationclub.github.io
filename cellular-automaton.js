@@ -34,9 +34,21 @@
     };
 
     constructor.prototype.step = function () {
+      var prefix = this.rule.apply(false, false, this.cells[0]),
+        suffix = this.rule.apply(this.cells[this.cells.length - 1], false, false);
+
       this.cells = this.cells.map(function (middle, column) {
         return this.rule.apply(this.cells[column - 1], middle, this.cells[column + 1]);
       }, this);
+
+      if (prefix) {
+        this.cells.unshift(prefix);
+        this.origin++;
+      }
+
+      if (suffix) {
+        this.cells.push(suffix);
+      }
     };
 
     constructor.prototype.cellAt = function (column) {
