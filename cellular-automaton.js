@@ -19,9 +19,9 @@
   var CellularAutomaton = (function () {
     var constructor = function (options) {
       this.rule = options.rule;
-      this.cells = [true];
+      this.cells = options.cells;
       this.left = 0;
-      this.right = 0;
+      this.right = this.cells.length - 1;
     };
 
     constructor.prototype.step = function () {
@@ -75,7 +75,7 @@
     var context = canvas.getContext('2d');
 
     var cellCount = Math.floor(canvas.width / cellSize);
-    var cellularAutomaton = new CellularAutomaton({ rule: rule });
+    var cellularAutomaton = new CellularAutomaton({ rule: rule, cells: [true] });
 
     var rowCount = Math.floor(canvas.height / cellSize);
     var row = 0;
