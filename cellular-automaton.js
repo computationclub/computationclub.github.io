@@ -61,9 +61,9 @@
   }());
 
   var drawCells = function (cellularAutomaton, context, row, cellCount, cellSize) {
-    for (var column = -cellCount + 1; column <= 0; ++column) {
+    for (var column = 0; column < cellCount; ++column) {
       if (cellularAutomaton.cellAt(column)) {
-        context.fillRect((column + cellCount - 1) * cellSize, row * cellSize, cellSize, cellSize);
+        context.fillRect(column * cellSize, row * cellSize, cellSize, cellSize);
       }
     }
   };
@@ -76,6 +76,17 @@
     context.clearRect(0, height - cellSize, width, cellSize);
   };
 
+  var makeCells = function (cellCount) {
+    var cells = new Array(cellCount);
+
+    for (var i = 0; i < cellCount; ++i) {
+      cells[i] = false;
+    }
+    cells[cellCount - 1] = true;
+
+    return cells;
+  };
+
   exports.drawCellularAutomaton = function (options) {
     var canvas = options.canvas,
       cellSize = options.cellSize,
@@ -85,7 +96,10 @@
     var context = canvas.getContext('2d');
 
     var cellCount = Math.floor(canvas.width / cellSize);
-    var cellularAutomaton = new CellularAutomaton({ rule: rule, cells: [true] });
+    var cellularAutomaton = new CellularAutomaton({
+      rule: rule,
+      cells: makeCells(cellCount)
+    });
 
     var rowCount = Math.floor(canvas.height / cellSize);
     var row = 0;
