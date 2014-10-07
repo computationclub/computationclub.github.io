@@ -31,6 +31,18 @@
       this.right++;
     };
 
+    constructor.prototype.trimCells = function () {
+      while (!this.cells[0]) {
+        this.cells.shift();
+        this.left++;
+      }
+
+      while (!this.cells[this.cells.length - 1]) {
+        this.cells.pop();
+        this.right--;
+      }
+    };
+
     constructor.prototype.step = function () {
       this.padCells();
 
@@ -38,6 +50,7 @@
         return this.rule.apply(this.cells[column - 1], middle, this.cells[column + 1]);
       }, this);
 
+      this.trimCells();
     };
 
     constructor.prototype.cellAt = function (column) {
