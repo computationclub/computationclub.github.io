@@ -32,12 +32,12 @@
     };
 
     constructor.prototype.trimCells = function () {
-      while (!this.cells[0]) {
+      if (!this.cells[0]) {
         this.cells.shift();
         this.left++;
       }
 
-      while (!this.cells[this.cells.length - 1]) {
+      if (!this.cells[this.cells.length - 1]) {
         this.cells.pop();
         this.right--;
       }
