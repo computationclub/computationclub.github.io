@@ -20,7 +20,8 @@
     var constructor = function (options) {
       this.rule = options.rule;
       this.cells = [true];
-      this.origin = 0;
+      this.left = 0;
+      this.right = 0;
     };
 
     constructor.prototype.step = function () {
@@ -33,16 +34,17 @@
 
       if (prefix) {
         this.cells.unshift(prefix);
-        this.origin++;
+        this.left--;
       }
 
       if (suffix) {
         this.cells.push(suffix);
+        this.right++;
       }
     };
 
     constructor.prototype.cellAt = function (column) {
-      return this.cells[this.origin + column];
+      return this.cells[column - this.left];
     };
 
     return constructor;
