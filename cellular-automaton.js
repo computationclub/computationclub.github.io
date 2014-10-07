@@ -24,23 +24,20 @@
       this.right = this.cells.length - 1;
     };
 
+    constructor.prototype.padCells = function () {
+      this.cells.unshift(false);
+      this.left--;
+      this.cells.push(false);
+      this.right++;
+    };
+
     constructor.prototype.step = function () {
-      var prefix = this.rule.apply(false, false, this.cells[0]),
-        suffix = this.rule.apply(this.cells[this.cells.length - 1], false, false);
+      this.padCells();
 
       this.cells = this.cells.map(function (middle, column) {
         return this.rule.apply(this.cells[column - 1], middle, this.cells[column + 1]);
       }, this);
 
-      if (prefix) {
-        this.cells.unshift(prefix);
-        this.left--;
-      }
-
-      if (suffix) {
-        this.cells.push(suffix);
-        this.right++;
-      }
     };
 
     constructor.prototype.cellAt = function (column) {
