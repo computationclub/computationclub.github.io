@@ -117,13 +117,11 @@
       rule = options.rule,
       rowsPerSecond = options.rowsPerSecond;
 
-    var cellCount = Math.floor(canvas.width / cellSize);
+    var cellGrid = new CellGrid({ canvas: canvas, cellSize: cellSize });
     var cellularAutomaton = new CellularAutomaton({
       rule: rule,
-      cells: makeCells(cellCount)
+      cells: makeCells(cellGrid.columns)
     });
-
-    var cellGrid = new CellGrid({ canvas: canvas, cellSize: cellSize });
 
     window.setInterval(function () {
       cellGrid.draw(cellularAutomaton);
