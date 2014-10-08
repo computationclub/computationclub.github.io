@@ -77,6 +77,10 @@
       }
     };
 
+    var drawCell = function (context, column, row, size) {
+      context.fillRect(column * size, row * size, size, size);
+    };
+
     var constructor = function (options) {
       this.canvas = options.canvas;
       this.cellSize = options.cellSize;
@@ -90,7 +94,7 @@
     constructor.prototype.draw = function (cellularAutomaton) {
       for (var column = 0; column < this.columns; ++column) {
         if (cellularAutomaton.cellAt(column)) {
-          this.context.fillRect(column * this.cellSize, this.row * this.cellSize, this.cellSize, this.cellSize);
+          drawCell(this.context, column, this.row, this.cellSize);
         }
       }
 
