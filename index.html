@@ -8,7 +8,7 @@
     <script src="cell-grid.js"></script>
     <script src="cellular-automaton.js"></script>
     <script>
-      var rule = new Rule(110),
+      var ruleNumberId = 'rule-number',
         canvasId = 'cellular-automaton',
         cellSize = 2,
         rowsPerSecond = 100;
@@ -20,7 +20,7 @@
         });
 
         var cellularAutomaton = new CellularAutomaton({
-          rule: rule,
+          rule: new Rule(document.getElementById(ruleNumberId).valueAsNumber),
           size: cellGrid.columns
         });
 
@@ -36,6 +36,8 @@
 
   <body>
     <h1>London Computation Club</h1>
+
+    <p>The first rule of London Computation Club is Rule <input id="rule-number" type="number" value="110" min="0" max="255">.</p>
 
     <canvas id="cellular-automaton" width="500" height="500"></canvas>
 
