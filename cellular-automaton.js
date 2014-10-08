@@ -112,21 +112,20 @@
   };
 
   exports.drawCellularAutomaton = function (options) {
-    var canvas = options.canvas,
-      cellSize = options.cellSize,
-      rule = options.rule,
-      rowsPerSecond = options.rowsPerSecond;
+    var cellGrid = new CellGrid({
+      canvas: options.canvas,
+      cellSize: options.cellSize
+    });
 
-    var cellGrid = new CellGrid({ canvas: canvas, cellSize: cellSize });
     var cellularAutomaton = new CellularAutomaton({
-      rule: rule,
+      rule: options.rule,
       cells: makeCells(cellGrid.columns)
     });
 
     window.setInterval(function () {
       cellGrid.draw(cellularAutomaton);
       cellularAutomaton.step();
-    }, 1000 / rowsPerSecond);
+    }, 1000 / options.rowsPerSecond);
   };
 
   exports.Rule = Rule;
