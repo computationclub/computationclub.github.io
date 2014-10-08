@@ -34,7 +34,7 @@
 
     constructor.prototype.draw = function (cellularAutomaton) {
       for (var column = 0; column < this.columns; ++column) {
-        if (cellularAutomaton.cellAt(column)) {
+        if (cellularAutomaton.getCell(column)) {
           drawCell(this.context, column, this.row, this.cellSize);
         }
       }

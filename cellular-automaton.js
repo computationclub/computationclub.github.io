@@ -49,7 +49,7 @@
       trimCells.call(this);
     };
 
-    constructor.prototype.cellAt = function (column) {
+    constructor.prototype.getCell = function (column) {
       return this.cells[column - this.left];
     };
 
