@@ -19,13 +19,10 @@
           cellSize: cellSize
         });
 
-        var cells = new Array(cellGrid.columns);
-        for (var i = 0; i < cellGrid.columns; ++i) {
-          cells[i] = false;
-        }
-        cells[cells.length - 1] = true;
-
-        var cellularAutomaton = new CellularAutomaton({ rule: rule, cells: cells });
+        var cellularAutomaton = new CellularAutomaton({
+          rule: rule,
+          size: cellGrid.columns
+        });
 
         window.setInterval(function () {
           cellGrid.draw(cellularAutomaton);

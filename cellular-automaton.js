@@ -2,6 +2,17 @@
   'use strict';
 
   var CellularAutomaton = (function () {
+    var makeCells = function (size) {
+      var cells = new Array(size);
+
+      for (var i = 0; i < size; ++i) {
+        cells[i] = false;
+      }
+      cells[cells.length - 1] = true;
+
+      return cells;
+    };
+
     var padCells = function () {
       this.cells.unshift(false);
       this.left--;
@@ -23,7 +34,7 @@
 
     var constructor = function (options) {
       this.rule = options.rule;
-      this.cells = options.cells;
+      this.cells = makeCells(options.size);
       this.left = 0;
       this.right = this.cells.length - 1;
     };
