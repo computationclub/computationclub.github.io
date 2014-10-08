@@ -69,6 +69,14 @@
       context.clearRect(0, height - cellSize, width, cellSize);
     };
 
+    var nextRow = function () {
+      if (this.row < this.rowCount - 1) {
+        ++this.row;
+      } else {
+        scrollContext(this.context, this.cellCount, this.rowCount, this.cellSize);
+      }
+    };
+
     var constructor = function (options) {
       this.canvas = options.canvas;
       this.cellSize = options.cellSize;
@@ -85,14 +93,8 @@
           this.context.fillRect(column * this.cellSize, this.row * this.cellSize, this.cellSize, this.cellSize);
         }
       }
-    };
 
-    constructor.prototype.nextRow = function () {
-      if (this.row < this.rowCount - 1) {
-        ++this.row;
-      } else {
-        scrollContext(this.context, this.cellCount, this.rowCount, this.cellSize);
-      }
+      nextRow.call(this);
     };
 
     return constructor;
@@ -125,7 +127,6 @@
 
     window.setInterval(function () {
       cellGrid.draw(cellularAutomaton);
-      cellGrid.nextRow();
       cellularAutomaton.step();
     }, 1000 / rowsPerSecond);
   };
