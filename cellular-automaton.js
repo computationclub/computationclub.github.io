@@ -17,21 +17,14 @@
   }());
 
   var CellularAutomaton = (function () {
-    var constructor = function (options) {
-      this.rule = options.rule;
-      this.cells = options.cells;
-      this.left = 0;
-      this.right = this.cells.length - 1;
-    };
-
-    constructor.prototype.padCells = function () {
+    var padCells = function () {
       this.cells.unshift(false);
       this.left--;
       this.cells.push(false);
       this.right++;
     };
 
-    constructor.prototype.trimCells = function () {
+    var trimCells = function () {
       if (!this.cells[0]) {
         this.cells.shift();
         this.left++;
@@ -43,14 +36,21 @@
       }
     };
 
+    var constructor = function (options) {
+      this.rule = options.rule;
+      this.cells = options.cells;
+      this.left = 0;
+      this.right = this.cells.length - 1;
+    };
+
     constructor.prototype.step = function () {
-      this.padCells();
+      padCells.call(this);
 
       this.cells = this.cells.map(function (middle, column) {
         return this.rule.apply(this.cells[column - 1], middle, this.cells[column + 1]);
       }, this);
 
-      this.trimCells();
+      trimCells.call(this);
     };
 
     constructor.prototype.cellAt = function (column) {
