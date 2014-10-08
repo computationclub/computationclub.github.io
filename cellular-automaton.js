@@ -1,5 +1,4 @@
 /* jshint bitwise: false */
-/* global window */
 
 (function (exports) {
   'use strict';
@@ -104,33 +103,7 @@
     return constructor;
   }());
 
-  var makeCells = function (cellCount) {
-    var cells = new Array(cellCount);
-
-    for (var i = 0; i < cellCount; ++i) {
-      cells[i] = false;
-    }
-    cells[cellCount - 1] = true;
-
-    return cells;
-  };
-
-  exports.drawCellularAutomaton = function (options) {
-    var cellGrid = new CellGrid({
-      canvas: options.canvas,
-      cellSize: options.cellSize
-    });
-
-    var cellularAutomaton = new CellularAutomaton({
-      rule: options.rule,
-      cells: makeCells(cellGrid.columns)
-    });
-
-    window.setInterval(function () {
-      cellGrid.draw(cellularAutomaton);
-      cellularAutomaton.step();
-    }, 1000 / options.rowsPerSecond);
-  };
-
   exports.Rule = Rule;
+  exports.CellGrid = CellGrid;
+  exports.CellularAutomaton = CellularAutomaton;
 }(this));

@@ -6,13 +6,29 @@
     <title>London Computation Club</title>
     <script src="cellular-automaton.js"></script>
     <script>
+      var rule = new Rule(110),
+        canvasId = 'cellular-automaton',
+        cellSize = 2,
+        rowsPerSecond = 100;
+
       document.addEventListener('DOMContentLoaded', function () {
-        drawCellularAutomaton({
-          canvas: document.getElementById('cellular-automaton'),
-          rule: new Rule(110),
-          cellSize: 2,
-          rowsPerSecond: 100
+        var cellGrid = new CellGrid({
+          canvas: document.getElementById(canvasId),
+          cellSize: cellSize
         });
+
+        var cells = new Array(cellGrid.columns);
+        for (var i = 0; i < cellGrid.columns; ++i) {
+          cells[i] = false;
+        }
+        cells[cells.length - 1] = true;
+
+        var cellularAutomaton = new CellularAutomaton({ rule: rule, cells: cells });
+
+        window.setInterval(function () {
+          cellGrid.draw(cellularAutomaton);
+          cellularAutomaton.step();
+        }, 1000 / rowsPerSecond);
       });
     </script>
   </head>
