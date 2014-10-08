@@ -24,6 +24,8 @@
           size: cellGrid.columns
         });
 
+        cellularAutomaton.setCell(cellGrid.columns - 1, true);
+
         window.setInterval(function () {
           cellGrid.draw(cellularAutomaton);
           cellularAutomaton.step();

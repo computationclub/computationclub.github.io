@@ -8,7 +8,6 @@
       for (var i = 0; i < size; ++i) {
         cells[i] = false;
       }
-      cells[cells.length - 1] = true;
 
       return cells;
     };
