@@ -14,13 +14,15 @@
         rowsPerSecond = 100;
 
       document.addEventListener('DOMContentLoaded', function () {
+        var ruleNumber = document.getElementById(ruleNumberId);
+
         var cellGrid = new CellGrid({
           canvas: document.getElementById(canvasId),
           cellSize: cellSize
         });
 
         var cellularAutomaton = new CellularAutomaton({
-          rule: new Rule(document.getElementById(ruleNumberId).valueAsNumber),
+          rule: new Rule(ruleNumber.valueAsNumber),
           size: cellGrid.columns
         });
 
@@ -30,6 +32,10 @@
           cellGrid.draw(cellularAutomaton);
           cellularAutomaton.step();
         }, 1000 / rowsPerSecond);
+
+        ruleNumber.addEventListener('change', function () {
+          cellularAutomaton.rule = new Rule(ruleNumber.valueAsNumber);
+        });
       });
     </script>
   </head>
