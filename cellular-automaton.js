@@ -61,8 +61,8 @@
   }());
 
   var CellGrid = (function () {
-    var scrollContext = function (context, cellCount, rowCount, cellSize) {
-      var width = cellCount * cellSize, height = rowCount * cellSize;
+    var scrollContext = function (context, columns, rows, cellSize) {
+      var width = columns * cellSize, height = rows * cellSize;
 
       var imageData = context.getImageData(0, cellSize, width, height - cellSize);
       context.putImageData(imageData, 0, 0);
@@ -70,10 +70,10 @@
     };
 
     var nextRow = function () {
-      if (this.row < this.rowCount - 1) {
+      if (this.row < this.rows - 1) {
         ++this.row;
       } else {
-        scrollContext(this.context, this.cellCount, this.rowCount, this.cellSize);
+        scrollContext(this.context, this.columns, this.rows, this.cellSize);
       }
     };
 
@@ -83,12 +83,12 @@
 
       this.row = 0;
       this.context = this.canvas.getContext('2d');
-      this.cellCount = Math.floor(this.canvas.width / this.cellSize);
-      this.rowCount = Math.floor(this.canvas.height / this.cellSize);
+      this.columns = Math.floor(this.canvas.width / this.cellSize);
+      this.rows = Math.floor(this.canvas.height / this.cellSize);
     };
 
     constructor.prototype.draw = function (cellularAutomaton) {
-      for (var column = 0; column < this.cellCount; ++column) {
+      for (var column = 0; column < this.columns; ++column) {
         if (cellularAutomaton.cellAt(column)) {
           this.context.fillRect(column * this.cellSize, this.row * this.cellSize, this.cellSize, this.cellSize);
         }
