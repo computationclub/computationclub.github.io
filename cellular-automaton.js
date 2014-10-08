@@ -53,6 +53,10 @@
       return this.cells[column - this.left];
     };
 
+    constructor.prototype.setCell = function (column, value) {
+      this.cells[column - this.left] = !!value;
+    };
+
     return constructor;
   }());
 
