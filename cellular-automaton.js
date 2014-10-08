@@ -60,21 +60,43 @@
     return constructor;
   }());
 
-  var drawCells = function (cellularAutomaton, context, row, cellCount, cellSize) {
-    for (var column = 0; column < cellCount; ++column) {
-      if (cellularAutomaton.cellAt(column)) {
-        context.fillRect(column * cellSize, row * cellSize, cellSize, cellSize);
+  var CellGrid = (function () {
+    var scrollContext = function (context, cellCount, rowCount, cellSize) {
+      var width = cellCount * cellSize, height = rowCount * cellSize;
+
+      var imageData = context.getImageData(0, cellSize, width, height - cellSize);
+      context.putImageData(imageData, 0, 0);
+      context.clearRect(0, height - cellSize, width, cellSize);
+    };
+
+    var constructor = function (options) {
+      this.canvas = options.canvas;
+      this.cellSize = options.cellSize;
+
+      this.row = 0;
+      this.context = this.canvas.getContext('2d');
+      this.cellCount = Math.floor(this.canvas.width / this.cellSize);
+      this.rowCount = Math.floor(this.canvas.height / this.cellSize);
+    };
+
+    constructor.prototype.draw = function (cellularAutomaton) {
+      for (var column = 0; column < this.cellCount; ++column) {
+        if (cellularAutomaton.cellAt(column)) {
+          this.context.fillRect(column * this.cellSize, this.row * this.cellSize, this.cellSize, this.cellSize);
+        }
       }
-    }
-  };
+    };
 
-  var scrollContext = function (context, cellCount, rowCount, cellSize) {
-    var width = cellCount * cellSize, height = rowCount * cellSize;
+    constructor.prototype.nextRow = function () {
+      if (this.row < this.rowCount - 1) {
+        ++this.row;
+      } else {
+        scrollContext(this.context, this.cellCount, this.rowCount, this.cellSize);
+      }
+    };
 
-    var imageData = context.getImageData(0, cellSize, width, height - cellSize);
-    context.putImageData(imageData, 0, 0);
-    context.clearRect(0, height - cellSize, width, cellSize);
-  };
+    return constructor;
+  }());
 
   var makeCells = function (cellCount) {
     var cells = new Array(cellCount);
@@ -93,26 +115,18 @@
       rule = options.rule,
       rowsPerSecond = options.rowsPerSecond;
 
-    var context = canvas.getContext('2d');
-
     var cellCount = Math.floor(canvas.width / cellSize);
     var cellularAutomaton = new CellularAutomaton({
       rule: rule,
       cells: makeCells(cellCount)
     });
 
-    var rowCount = Math.floor(canvas.height / cellSize);
-    var row = 0;
+    var cellGrid = new CellGrid({ canvas: canvas, cellSize: cellSize });
 
     window.setInterval(function () {
-      drawCells(cellularAutomaton, context, row, cellCount, cellSize);
+      cellGrid.draw(cellularAutomaton);
+      cellGrid.nextRow();
       cellularAutomaton.step();
-
-      if (row < rowCount - 1) {
-        ++row;
-      } else {
-        scrollContext(context, cellCount, rowCount, cellSize);
-      }
     }, 1000 / rowsPerSecond);
   };
 
