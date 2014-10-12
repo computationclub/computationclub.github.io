@@ -1,8 +1,13 @@
+html {
+  background: gray;
+}
+
 body {
   margin: auto;
   padding: 30px;
   font-family: Montserrat;
   max-width: 800px;
+  background: white;
 }
 
 h1 {
