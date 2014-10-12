@@ -1,0 +1,8 @@
+input[type=number] {
+  border: none;
+  border-bottom: 1px dotted black;
+  padding: 0;
+  font: inherit;
+  outline: none;
+  width: 3em;
+}
