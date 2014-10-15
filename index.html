@@ -58,7 +58,7 @@
         {% for meeting in site.data.meetings.future %}
         <ul>
           <li>
-            <a href="{{ meeting.url }}">{{ meeting.date | date: "%A, %-d %B %Y" }}</a>
+            <a href="{{ meeting.url }}">{{ meeting.date | date: "%A %-dth %B %Y" }}</a>
           </li>
         </ul>
         {% endfor %}
@@ -75,7 +75,7 @@
       <ul>
         {% for meeting in site.data.meetings.past %}
         <li>
-          <a href="{{ meeting.url }}">{{ meeting.date | date: "%A, %-d %B %Y" }}</a>
+          <a href="{{ meeting.url }}">{{ meeting.date | date: "%A %-d %B %Y" }}</a>
           {% if meeting.write_up %}
           <ul>
             <li><a href="{{ meeting.write_up }}">Write-up</a></li>
