@@ -8,40 +8,6 @@
     <title>London Computation Club</title>
     <link href="http://fonts.googleapis.com/css?family=Codystar|Montserrat" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <script src="rule.js"></script>
-    <script src="cell-grid.js"></script>
-    <script src="cellular-automaton.js"></script>
-    <script>
-      var ruleNumberId = 'rule-number',
-        canvasId = 'cellular-automaton',
-        cellSize = 2,
-        rowsPerSecond = 100;
-
-      document.addEventListener('DOMContentLoaded', function () {
-        var ruleNumber = document.getElementById(ruleNumberId);
-
-        var cellGrid = new CellGrid({
-          canvas: document.getElementById(canvasId),
-          cellSize: cellSize
-        });
-
-        var cellularAutomaton = new CellularAutomaton({
-          rule: new Rule(ruleNumber.valueAsNumber),
-          size: cellGrid.columns
-        });
-
-        cellularAutomaton.setCell(cellGrid.columns - 1, true);
-
-        window.setInterval(function () {
-          cellGrid.draw(cellularAutomaton);
-          cellularAutomaton.step();
-        }, 1000 / rowsPerSecond);
-
-        ruleNumber.addEventListener('change', function () {
-          cellularAutomaton.rule = new Rule(ruleNumber.valueAsNumber);
-        });
-      });
-    </script>
   </head>
 
   <body>
@@ -104,5 +70,42 @@
         <li><a href="https://groups.google.com/group/london-computation-club">Mailing list</a></li>
       </ul>
     </section>
+
+    <script src="rule.js"></script>
+    <script src="cell-grid.js"></script>
+    <script src="cellular-automaton.js"></script>
+    <script>
+      (function () {
+        var ruleNumberId = 'rule-number',
+            canvasId = 'cellular-automaton',
+            cellSize = 2,
+            rowsPerSecond = 100;
+
+        document.addEventListener('DOMContentLoaded', function () {
+          var ruleNumber = document.getElementById(ruleNumberId);
+
+          var cellGrid = new CellGrid({
+            canvas: document.getElementById(canvasId),
+            cellSize: cellSize
+          });
+
+          var cellularAutomaton = new CellularAutomaton({
+            rule: new Rule(ruleNumber.valueAsNumber),
+            size: cellGrid.columns
+          });
+
+          cellularAutomaton.setCell(cellGrid.columns - 1, true);
+
+          window.setInterval(function () {
+            cellGrid.draw(cellularAutomaton);
+            cellularAutomaton.step();
+          }, 1000 / rowsPerSecond);
+
+          ruleNumber.addEventListener('change', function () {
+            cellularAutomaton.rule = new Rule(ruleNumber.valueAsNumber);
+          });
+        });
+      }());
+    </script>
   </body>
 </html>
