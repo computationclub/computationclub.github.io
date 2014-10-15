@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 
 <html>
@@ -52,102 +54,35 @@
     <section>
       <h2>Future meetings</h2>
 
+      {% if site.data.meetings.future %}
+        {% for meeting in site.data.meetings.future %}
+        <ul>
+          <li>
+            <a href="{{ meeting.url }}">{{ meeting.date | date: "%A, %-d %B %Y" }}</a>
+          </li>
+        </ul>
+        {% endfor %}
+      {% else %}
       <ul>
         <li>(none)</li>
       </ul>
+      {% endif %}
     </section>
 
     <section>
       <h2>Past meetings</h2>
 
       <ul>
+        {% for meeting in site.data.meetings.past %}
         <li>
-          <a href="http://lanyrd.com/2014/london-computation-club/">Tuesday 14th October 2014</a>
+          <a href="{{ meeting.url }}">{{ meeting.date | date: "%A, %-d %B %Y" }}</a>
+          {% if meeting.write_up %}
           <ul>
-            <li><a href="https://groups.google.com/d/msg/london-computation-club/5g8aTBRNyDk/DYw1-5rXj-cJ">Write-up</a></li>
+            <li><a href="{{ meeting.write_up }}">Write-up</a></li>
           </ul>
+          {% endif %}
         </li>
-        <li>
-          <a href="http://lanyrd.com/2014/little-schemer-book-club-september/">Monday 22nd September 2014</a>
-          <ul>
-            <li><a href="https://groups.google.com/d/msg/london-computation-club/4WeajK29_hY/B4SrUiAgNUYJ">Write-up</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="http://lanyrd.com/2014/little-schemer-book-club-august/">Monday 1st September 2014</a>
-          <ul>
-            <li><a href="https://groups.google.com/d/msg/london-computation-club/fvWvIApqjWI/3xY2zi0ej44J">Write-up</a></li>
-          </ul>
-        </li>
-        <li><a href="http://lanyrd.com/2014/the-little-schemer-book-club-meeting-11/">Monday 28th July 2014</a></li>
-        <li>
-          <a href="http://lanyrd.com/2014/little-schemer-book-club-july/">Monday 7th July 2014</a>
-          <ul>
-            <li><a href="https://groups.google.com/d/msg/computationbook/fiLu2jDed60/1636C7CcybEJ">Write-up</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="http://lanyrd.com/2014/the-little-schemer-book-club-meeting-9/">Monday 23rd June 2014</a>
-          <ul>
-            <li><a href="https://groups.google.com/d/msg/computationbook/rVFWbMomyYA/eGRPnszG_fMJ">Write-up</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="http://lanyrd.com/2014/little-schemer-book-club-june/">Monday 2nd June 2014</a>
-          <ul>
-            <li><a href="https://groups.google.com/d/msg/computationbook/BJYI_zBODzk/H86AopiJynoJ">Write-up</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="http://lanyrd.com/2014/little-schemer-book-club-may/">Monday 19th May 2014</a>
-          <ul>
-            <li><a href="https://groups.google.com/d/msg/computationbook/HrGpERdcFRg/IyWHR5BcZdQJ">Write-up</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="http://lanyrd.com/2014/little-schemer-book-club-april/">Monday 28th April 2014</a>
-          <ul>
-            <li><a href="https://groups.google.com/d/msg/computationbook/s7IF6FS8vqo/cIMdg85IdKwJ">Write-up</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="http://lanyrd.com/2014/the-little-schemer-book-club-meeting-5/">Monday 31st March 2014</a>
-          <ul>
-            <li><a href="https://groups.google.com/d/msg/computationbook/bEIm3WmVxxE/ohWBO8B0utcJ">Write-up</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="http://lanyrd.com/2014/little-schemer-book-club-march/">Monday 17th March 2014</a>
-          <ul>
-            <li><a href="https://groups.google.com/d/msg/computationbook/mmP9TvQJsmQ/H0LDhTGL9D0J">Write-up</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="http://lanyrd.com/2014/little-schemer-book-club-february/">Monday 24th Feburary 2014</a>
-          <ul>
-            <li><a href="https://groups.google.com/d/msg/computationbook/ortjT-KcO4A/Ov9vXOCbNn8J">Write-up</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="http://lanyrd.com/2014/little-schemer-book-club/">Monday 3rd February 2014</a>
-          <ul>
-            <li><a href="https://groups.google.com/d/msg/computationbook/1kPa2c5Eyn4/sObSk5EzmpcJ">Write-up</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="http://lanyrd.com/2014/little-schemer-book-club-chapter-1/">Monday 20th January 2014</a>
-          <ul>
-            <li><a href="https://groups.google.com/d/msg/computationbook/iGpSysf3IE0/IxOONWGD3OwJ">Write-up</a></li>
-          </ul>
-        </li>
-        <li><a href="http://lanyrd.com/2013/understanding-computation-book-club-2-november/">Tuesday 19th November 2013</a></li>
-        <li><a href="http://lanyrd.com/2013/understanding-computation-book-club-2-october/">Tuesday 15th October 2013</a></li>
-        <li><a href="http://lanyrd.com/2013/understanding-computation-book-club-2-september/">Tuesday 24th September 2013</a></li>
-        <li><a href="http://lanyrd.com/2013/understanding-computation-book-club-2-august/">Tuesday 27th August 2013</a></li>
-        <li><a href="http://lanyrd.com/2013/understanding-computation-book-club-2/">Tuesday 6th August 2013</a></li>
-        <li><a href="http://lanyrd.com/2013/understanding-computation-book-club/">Tuesday 16th July 2013</a></li>
-        <li><a href="http://lanyrd.com/2013/computationbook/">Tuesday 25th June 2013</a></li>
-        <li><a href="http://lanyrd.com/2013/compbookclub/">Tuesday 4th June 2013</a></li>
+        {% endfor %}
       </ul>
     </section>
 
