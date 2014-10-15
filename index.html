@@ -36,6 +36,20 @@
     </section>
 
     <section>
+      <h2>Members</h2>
+
+      <ul class="inline-list">
+      {% for member in site.data.members %}
+        <li>
+          <a href="{{ member.url }}">
+            <img src="{{ member.thumbnail }}" width="40" height="40" alt="{{ member.name }}">
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+    </section>
+
+    <section>
       <h2>Past meetings</h2>
 
       <ul>
