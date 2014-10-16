@@ -6,8 +6,7 @@ layout: default
 
 <canvas id="cellular-automaton" width="800" height="300"></canvas>
 
-{% capture now %}{{ 'now' | date: '%s' }}{% endcapture %}
-{% assign now = now | plus: 0 %}
+{% assign now = 'now' | date: '%F' %}
 {% assign meetings = site.data.meetings | sort: 'date' %}
 <section>
   <h2>Future meetings</h2>
@@ -15,7 +14,8 @@ layout: default
   <ul>
   {% assign future_meetings_planned = false %}
   {% for meeting in meetings reversed %}
-    {% if meeting.date > now %}
+    {% assign meeting_date = meeting.date | date: '%F' %}
+    {% if meeting_date > now %}
     {% assign future_meetings_planned = true %}
     <li>
       <a href="{{ meeting.url }}">{{ meeting.date | date: "%A %-d %B %Y" }}</a>
@@ -49,7 +49,8 @@ layout: default
 
   <ul>
   {% for meeting in meetings reversed %}
-    {% if meeting.date <= now %}
+    {% assign meeting_date = meeting.date | date: '%F' %}
+    {% if meeting_date <= now %}
     <li>
       <a href="{{ meeting.url }}">{{ meeting.date | date: "%A %-d %B %Y" }}</a>
       {% if meeting.write_up %}
