@@ -6,7 +6,7 @@ layout: default
 
 <canvas id="cellular-automaton" width="800" height="300"></canvas>
 
-{% assign now = 'now' | date: '%F' %}
+{% assign now = site.time | date: '%F' %}
 {% assign meetings = site.data.meetings | sort: 'date' %}
 <section>
   <h2>Future meetings</h2>
