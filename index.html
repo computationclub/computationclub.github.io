@@ -1,132 +1,119 @@
 ---
+title: London Computation Club
+layout: default
 ---
-<!DOCTYPE html>
+<p>The first rule of London Computation Club is Rule <input id="rule-number" type="number" value="110" min="0" max="255">.</p>
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>London Computation Club</title>
-    <link href="http://fonts.googleapis.com/css?family=Codystar|Montserrat" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-  </head>
+<canvas id="cellular-automaton" width="800" height="300"></canvas>
 
-  <body>
-    <h1>London Computation Club</h1>
+{% capture now %}{{ 'now' | date: "%s" }}{% endcapture %}
+{% assign now = now | plus: 0 %}
+<section>
+  <h2>Future meetings</h2>
 
-    <p>The first rule of London Computation Club is Rule <input id="rule-number" type="number" value="110" min="0" max="255">.</p>
+  <ul>
+  {% assign future_meetings_planned = false %}
+  {% for meeting in site.data.meetings %}
+    {% if meeting.date > now %}
+    {% assign future_meetings_planned = true %}
+    <li>
+      <a href="{{ meeting.url }}">{{ meeting.date | date: "%A %-dth %B %Y" }}</a>
+    </li>
+    {% endif %}
+  {% endfor %}
 
-    <canvas id="cellular-automaton" width="800" height="300"></canvas>
+  {% if future_meetings_planned == false %}
+    <li>(none)</li>
+  {% endif %}
+  </ul>
+</section>
 
-    {% capture now %}{{ 'now' | date: "%s" }}{% endcapture %}
-    {% assign now = now | plus: 0 %}
-    <section>
-      <h2>Future meetings</h2>
+<section>
+  <h2>Members</h2>
 
+  <ul class="inline-list">
+  {% for member in site.data.members %}
+    <li>
+      <a href="{{ member.url }}">
+        <img src="{{ member.thumbnail }}" width="40" height="40" alt="{{ member.name }}" title="{{ member.name }}">
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+</section>
+
+<section>
+  <h2>Past meetings</h2>
+
+  <ul>
+  {% for meeting in site.data.meetings %}
+    {% if meeting.date <= now %}
+    <li>
+      <a href="{{ meeting.url }}">{{ meeting.date | date: "%A %-dth %B %Y" }}</a>
+
+      {% if meeting.write_up %}
       <ul>
-      {% assign future_meetings_planned = false %}
-      {% for meeting in site.data.meetings %}
-        {% if meeting.date > now %}
-        {% assign future_meetings_planned = true %}
-        <li>
-          <a href="{{ meeting.url }}">{{ meeting.date | date: "%A %-dth %B %Y" }}</a>
-        </li>
-        {% endif %}
-      {% endfor %}
-
-      {% if future_meetings_planned == false %}
-        <li>(none)</li>
+        <li><a href="{{ meeting.write_up }}">Write-up</a></li>
+      </ul>
       {% endif %}
-      </ul>
-    </section>
+    </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+</section>
 
-    <section>
-      <h2>Members</h2>
+<section>
+  <h2>Books we&rsquo;ve read</h2>
 
-      <ul class="inline-list">
-      {% for member in site.data.members %}
-        <li>
-          <a href="{{ member.url }}">
-            <img src="{{ member.thumbnail }}" width="40" height="40" alt="{{ member.name }}">
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-    </section>
+  <ul>
+    <li><a href="http://computationbook.com/">Understanding Computation</a></li>
+    <li><a href="http://www.ccs.neu.edu/home/matthias/BTLS/">The Little Schemer</a></li>
+  </ul>
+</section>
 
-    <section>
-      <h2>Past meetings</h2>
+<section>
+  <h2>Contact</h2>
 
-      <ul>
-      {% for meeting in site.data.meetings %}
-        {% if meeting.date <= now %}
-        <li>
-          <a href="{{ meeting.url }}">{{ meeting.date | date: "%A %-dth %B %Y" }}</a>
+  <ul>
+    <li><a href="https://twitter.com/computationclub">Twitter</a></li>
+    <li><a href="https://github.com/computationclub">GitHub</a></li>
+    <li><a href="https://groups.google.com/group/london-computation-club">Mailing list</a></li>
+  </ul>
+</section>
 
-          {% if meeting.write_up %}
-          <ul>
-            <li><a href="{{ meeting.write_up }}">Write-up</a></li>
-          </ul>
-          {% endif %}
-        </li>
-        {% endif %}
-      {% endfor %}
-      </ul>
-    </section>
+<script src="{{ site.url }}/js/rule.js"></script>
+<script src="{{ site.url }}/js/cell-grid.js"></script>
+<script src="{{ site.url }}/js/cellular-automaton.js"></script>
+<script>
+  (function () {
+    var ruleNumberId = 'rule-number',
+        canvasId = 'cellular-automaton',
+        cellSize = 2,
+        rowsPerSecond = 100;
 
-    <section>
-      <h2>Books we&rsquo;ve read</h2>
+    document.addEventListener('DOMContentLoaded', function () {
+      var ruleNumber = document.getElementById(ruleNumberId);
 
-      <ul>
-        <li><a href="http://computationbook.com/">Understanding Computation</a></li>
-        <li><a href="http://www.ccs.neu.edu/home/matthias/BTLS/">The Little Schemer</a></li>
-      </ul>
-    </section>
+      var cellGrid = new CellGrid({
+        canvas: document.getElementById(canvasId),
+        cellSize: cellSize
+      });
 
-    <section>
-      <h2>Contact</h2>
+      var cellularAutomaton = new CellularAutomaton({
+        rule: new Rule(ruleNumber.valueAsNumber),
+        size: cellGrid.columns
+      });
 
-      <ul>
-        <li><a href="https://twitter.com/computationclub">Twitter</a></li>
-        <li><a href="https://github.com/computationclub">GitHub</a></li>
-        <li><a href="https://groups.google.com/group/london-computation-club">Mailing list</a></li>
-      </ul>
-    </section>
+      cellularAutomaton.setCell(cellGrid.columns - 1, true);
 
-    <script src="rule.js"></script>
-    <script src="cell-grid.js"></script>
-    <script src="cellular-automaton.js"></script>
-    <script>
-      (function () {
-        var ruleNumberId = 'rule-number',
-            canvasId = 'cellular-automaton',
-            cellSize = 2,
-            rowsPerSecond = 100;
+      window.setInterval(function () {
+        cellGrid.draw(cellularAutomaton);
+        cellularAutomaton.step();
+      }, 1000 / rowsPerSecond);
 
-        document.addEventListener('DOMContentLoaded', function () {
-          var ruleNumber = document.getElementById(ruleNumberId);
-
-          var cellGrid = new CellGrid({
-            canvas: document.getElementById(canvasId),
-            cellSize: cellSize
-          });
-
-          var cellularAutomaton = new CellularAutomaton({
-            rule: new Rule(ruleNumber.valueAsNumber),
-            size: cellGrid.columns
-          });
-
-          cellularAutomaton.setCell(cellGrid.columns - 1, true);
-
-          window.setInterval(function () {
-            cellGrid.draw(cellularAutomaton);
-            cellularAutomaton.step();
-          }, 1000 / rowsPerSecond);
-
-          ruleNumber.addEventListener('change', function () {
-            cellularAutomaton.rule = new Rule(ruleNumber.valueAsNumber);
-          });
-        });
-      }());
-    </script>
-  </body>
-</html>
+      ruleNumber.addEventListener('change', function () {
+        cellularAutomaton.rule = new Rule(ruleNumber.valueAsNumber);
+      });
+    });
+  }());
+</script>
