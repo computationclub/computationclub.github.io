@@ -16,5 +16,7 @@ $ git clone https://github.com/computationclub/computationclub.github.io.git
 $ cd computationclub.github.io
 $ bundle install
 $ foreman start
+// or
+$ jekyll serve --watch
 ```
 
