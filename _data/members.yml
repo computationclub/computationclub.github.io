@@ -1,9 +1,9 @@
 - name: Tom Stuart
-  url: http://codon.com
+  url: http://codon.com/
   thumbnail: http://2.gravatar.com/avatar/013c14cf8efaac93f7d4e0db3b40051d
 
 - name: Paul Mucur
-  url: http://mudge.name
+  url: http://mudge.name/
   thumbnail: http://0.gravatar.com/avatar/beb7f5dd655d8b8e9093ef4fc5e59b6e
 
 - name: Jamie White
@@ -11,7 +11,7 @@
   thumbnail: http://2.gravatar.com/avatar/bbbcbbdc9e73179d5e86a6244459ec4f
 
 - name: Tom Hall
-  url: http://www.thattommyhall.com
+  url: http://www.thattommyhall.com/
   thumbnail: http://www.gravatar.com/avatar/5c1252cee710e2cec785ec999a130fe6.png
 
 - name: James Mead
