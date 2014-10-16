@@ -8,12 +8,13 @@ layout: default
 
 {% capture now %}{{ 'now' | date: "%s" }}{% endcapture %}
 {% assign now = now | plus: 0 %}
+{% assign meetings = site.data.meetings | sort: 'date' %}
 <section>
   <h2>Future meetings</h2>
 
   <ul>
   {% assign future_meetings_planned = false %}
-  {% for meeting in site.data.meetings %}
+  {% for meeting in meetings reversed %}
     {% if meeting.date > now %}
     {% assign future_meetings_planned = true %}
     <li>
@@ -46,7 +47,7 @@ layout: default
   <h2>Past meetings</h2>
 
   <ul>
-  {% for meeting in site.data.meetings %}
+  {% for meeting in meetings reversed %}
     {% if meeting.date <= now %}
     <li>
       <a href="{{ meeting.url }}">{{ meeting.date | date: "%A %-dth %B %Y" }}</a>
