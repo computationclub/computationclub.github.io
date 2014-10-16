@@ -7,9 +7,14 @@ html {
 body {
   margin: auto;
   padding: 30px;
-  font-family: Montserrat;
+  font: 1em/1.4 "Helvetica Neue", Helvetica, sans-serif;
   max-width: 800px;
   background: white;
+}
+
+h2, h3 {
+  font-family: Montserrat, sans-serif;
+  line-height: 1;
 }
 
 h1 {
@@ -17,6 +22,12 @@ h1 {
   text-align: center;
   font-family: Codystar;
   font-size: 45px;
+  line-height: 1;
+}
+
+h1 a {
+  text-decoration: none;
+  color: inherit;
 }
 
 input[type=number] {
