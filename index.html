@@ -10,7 +10,8 @@ layout: default
   <h2>Future meetings</h2>
 
   {% if site.data.meetings.future %}
-    {% for meeting in site.data.meetings.future %}
+    {% assign future_meetings = site.data.meetings.future | sort: 'date' %}
+    {% for meeting in future_meetings reversed %}
     <ul>
       <li>
         <a href="{{ meeting.url }}">{{ meeting.date | date: "%A %-dth %B %Y" }}</a>
@@ -28,7 +29,8 @@ layout: default
   <h2>Members</h2>
 
   <ul class="inline-list">
-  {% for member in site.data.members %}
+  {% assign members = site.data.members | sort: 'name' %}
+  {% for member in members %}
     <li>
       <a href="{{ member.url }}">
         <img src="{{ member.thumbnail }}" width="40" height="40" alt="{{ member.name }}" title="{{ member.name }}">
@@ -42,7 +44,8 @@ layout: default
   <h2>Past meetings</h2>
 
   <ul>
-    {% for meeting in site.data.meetings.past %}
+    {% assign past_meetings = site.data.meetings.past | sort: 'date' %}
+    {% for meeting in past_meetings reversed %}
     <li>
       <a href="{{ meeting.url }}">{{ meeting.date | date: "%A %-d %B %Y" }}</a>
       {% if meeting.write_up %}
