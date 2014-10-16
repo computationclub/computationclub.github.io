@@ -6,23 +6,27 @@ layout: default
 
 <canvas id="cellular-automaton" width="800" height="300"></canvas>
 
+{% capture now %}{{ 'now' | date: '%s' }}{% endcapture %}
+{% assign now = now | plus: 0 %}
+{% assign meetings = site.data.meetings | sort: 'date' %}
 <section>
   <h2>Future meetings</h2>
 
-  {% if site.data.meetings.future %}
-    {% assign future_meetings = site.data.meetings.future | sort: 'date' %}
-    {% for meeting in future_meetings reversed %}
-    <ul>
-      <li>
-        <a href="{{ meeting.url }}">{{ meeting.date | date: "%A %-dth %B %Y" }}</a>
-      </li>
-    </ul>
-    {% endfor %}
-  {% else %}
   <ul>
+  {% assign future_meetings_planned = false %}
+  {% for meeting in meetings reversed %}
+    {% if meeting.date > now %}
+    {% assign future_meetings_planned = true %}
+    <li>
+      <a href="{{ meeting.url }}">{{ meeting.date | date: "%A %-d %B %Y" }}</a>
+    </li>
+    {% endif %}
+  {% endfor %}
+
+  {% if future_meetings_planned == false %}
     <li>(none)</li>
-  </ul>
   {% endif %}
+  </ul>
 </section>
 
 <section>
@@ -44,8 +48,8 @@ layout: default
   <h2>Past meetings</h2>
 
   <ul>
-    {% assign past_meetings = site.data.meetings.past | sort: 'date' %}
-    {% for meeting in past_meetings reversed %}
+  {% for meeting in meetings reversed %}
+    {% if meeting.date <= now %}
     <li>
       <a href="{{ meeting.url }}">{{ meeting.date | date: "%A %-d %B %Y" }}</a>
       {% if meeting.write_up %}
@@ -54,7 +58,8 @@ layout: default
       </ul>
       {% endif %}
     </li>
-    {% endfor %}
+    {% endif %}
+  {% endfor %}
   </ul>
 </section>
 
