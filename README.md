@@ -1,7 +1,7 @@
 # London Computation Club
 
 This is the web site of the London Computation Club hosted at
-http://london.computation.club
+http://london.computation.club/
 
 ## Dependencies
 
@@ -19,4 +19,3 @@ $ foreman start
 // or
 $ jekyll serve --watch
 ```
-
