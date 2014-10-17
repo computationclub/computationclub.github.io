@@ -11,15 +11,15 @@
     };
 
     var nextRow = function () {
-      if (this.row < this.rows - 1) {
-        ++this.row;
-      } else {
-        scrollContext(this.context, this.columns, this.rows, this.cellSize);
-      }
+      this.row = (this.row + 1) % this.rows;
     };
 
     var drawCell = function (context, column, row, size) {
       context.fillRect(column * size, row * size, size, size);
+    };
+
+    var clearCell = function (context, column, row, size) {
+      context.clearRect(column * size, row * size, size, size);
     };
 
     var constructor = function (options) {
@@ -36,6 +36,8 @@
       for (var column = 0; column < this.columns; ++column) {
         if (cellularAutomaton.getCell(column)) {
           drawCell(this.context, column, this.row, this.cellSize);
+        } else {
+          clearCell(this.context, column, this.row, this.cellSize);
         }
       }
 
