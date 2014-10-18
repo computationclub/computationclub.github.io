@@ -2,16 +2,20 @@
   'use strict';
 
   var CellGrid = (function () {
-    var scrollContext = function (context, columns, rows, cellSize) {
-      var width = columns * cellSize, height = rows * cellSize;
-
-      var imageData = context.getImageData(0, cellSize, width, height - cellSize);
-      context.putImageData(imageData, 0, 0);
-      context.clearRect(0, height - cellSize, width, cellSize);
+    var flipDirection = function () {
+      if (this.row === this.rows) {
+        this.reverse = true;
+      } else if (this.row === 0) {
+        this.reverse = false;
+      }
     };
 
     var nextRow = function () {
-      this.row = (this.row + 1) % this.rows;
+      if (this.reverse) {
+        --this.row;
+      } else {
+        ++this.row;
+      }
     };
 
     var drawCell = function (context, column, row, size) {
@@ -27,6 +31,7 @@
       this.cellSize = options.cellSize;
 
       this.row = 0;
+      this.reverse = false;
       this.context = this.canvas.getContext('2d');
       this.columns = Math.floor(this.canvas.width / this.cellSize);
       this.rows = Math.floor(this.canvas.height / this.cellSize);
@@ -41,6 +46,7 @@
         }
       }
 
+      flipDirection.call(this);
       nextRow.call(this);
     };
 
