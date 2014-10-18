@@ -1,0 +1,15 @@
+- title: Understanding Computation
+  authors:
+    - Tom Stuart
+  url: http://computationbook.com/
+  amazon_url: http://www.amazon.co.uk/gp/product/1449329276/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=1449329276&linkCode=as2&tag=computationclub-21&linkId=Y33MSPW2C4U3YVP5
+  cover_url: /images/books/understanding-computation.png
+
+- title: The Little Schemer
+  authors:
+    - Daniel P. Friedman
+    - Matthias Felleisen
+  url: http://www.ccs.neu.edu/home/matthias/BTLS/
+  amazon_url: http://www.amazon.co.uk/gp/product/0262560992/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=0262560992&linkCode=as2&tag=computationclub-21&linkId=7LA3DI5O7QPJD2UM
+  cover_url: /images/books/the-little-schemer.png
+
