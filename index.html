@@ -16,10 +16,8 @@ layout: default
   {% for meeting in meetings reversed %}
     {% assign meeting_date = meeting.date | date: '%F' %}
     {% if meeting_date >= now %}
-    {% assign future_meetings_planned = true %}
-    <li>
-      <a href="{{ meeting.url }}">{{ meeting.date | date: "%A %-d %B %Y" }}</a>
-    </li>
+      {% assign future_meetings_planned = true %}
+      {% include meeting.html %}
     {% endif %}
   {% endfor %}
 
@@ -51,14 +49,7 @@ layout: default
   {% for meeting in meetings reversed %}
     {% assign meeting_date = meeting.date | date: '%F' %}
     {% if meeting_date < now %}
-    <li>
-      <a href="{{ meeting.url }}">{{ meeting.date | date: "%A %-d %B %Y" }}</a>
-      {% if meeting.write_up %}
-      <ul>
-        <li><a href="{{ meeting.write_up }}">Write-up</a></li>
-      </ul>
-      {% endif %}
-    </li>
+      {% include meeting.html %}
     {% endif %}
   {% endfor %}
   </ul>
