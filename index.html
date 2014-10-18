@@ -96,8 +96,18 @@ layout: default
   (function () {
     var ruleNumberId = 'rule-number',
         canvasId = 'cellular-automaton',
-        cellSize = 2,
-        rowsPerSecond = 100;
+        cellSize = 2;
+
+    window.requestAnimFrame = (function () {
+      return window.requestAnimationFrame ||
+             window.webkitRequestAnimationFrame ||
+             window.mozRequestAnimationFrame ||
+             window.oRequestAnimationFrame ||
+             window.msRequestAnimationFrame ||
+             function(callback) {
+               window.setTimeout(callback, 1000 / 60);
+             };
+    })();
 
     document.addEventListener('DOMContentLoaded', function () {
       var ruleNumber = document.getElementById(ruleNumberId);
@@ -114,10 +124,11 @@ layout: default
 
       cellularAutomaton.setCell(cellGrid.columns - 1, true);
 
-      window.setInterval(function () {
+      (function render() {
+        requestAnimFrame(render);
         cellGrid.draw(cellularAutomaton);
         cellularAutomaton.step();
-      }, 1000 / rowsPerSecond);
+      }());
 
       ruleNumber.addEventListener('change', function () {
         cellularAutomaton.rule = new Rule(ruleNumber.valueAsNumber);
