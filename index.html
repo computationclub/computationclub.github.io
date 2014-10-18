@@ -2,13 +2,21 @@
 title: London Computation Club
 layout: default
 ---
-<p>The first rule of London Computation Club is Rule <input id="rule-number" type="number" value="110" min="0" max="255">. The rest are in <a href="{{site.url }}/code-of-conduct/">our code of conduct</a>.</p>
-
-<canvas id="cellular-automaton" width="800" height="300"></canvas>
-
 {% assign now = site.time | date: '%F' %}
 {% assign meetings = site.data.meetings | sort: 'date' %}
-<section>
+<section id="about">
+  <p>The <b>London Computation Club</b> is a meet-up for people interested in one or more of the following:</p>
+
+  <ul>
+    <li>Reading <a href="#books">books</a> (perhaps one we wouldn&rsquo;t ordinarily read on our own);</li>
+    <li>Learning about computation, programming and programs in general;</li>
+    <li>Writing code (perhaps of a different sort than we&rsquo;d do for &ldquo;work&rdquo;);</li>
+    <li>Hanging out with other inquisitive people.</li>
+  </ul>
+
+</section>
+
+<section id="future-meetings">
   <h2>Future meetings</h2>
 
   <ul>
@@ -29,7 +37,7 @@ layout: default
   </ul>
 </section>
 
-<section>
+<section id="members">
   <h2>Members</h2>
 
   <ul class="inline-list">
@@ -37,14 +45,14 @@ layout: default
   {% for member in members %}
     <li>
       <a href="{{ member.url }}">
-        <img src="{{ member.thumbnail }}" width="40" height="40" alt="{{ member.name }}" title="{{ member.name }}">
+        <img class="bordered" src="{{ member.thumbnail }}" width="40" height="40" alt="{{ member.name }}" title="{{ member.name }}">
       </a>
     </li>
   {% endfor %}
 </ul>
 </section>
 
-<section>
+<section id="past-meetings">
   <h2>Past meetings</h2>
 
   <ul>
@@ -64,7 +72,7 @@ layout: default
   </ul>
 </section>
 
-<section>
+<section id="books">
   <h2>Books we&rsquo;ve read</h2>
 
   <ul>
@@ -79,7 +87,7 @@ layout: default
   <p>If you buy these books using the Amazon links, London Computation Club gets a little kickback via the Amazon affiliate programme. We use that kickback to buy copies of the books for our library, to assist members or potential members who otherwise wouldn't be able to afford the book.<p>
 </section>
 
-<section>
+<section id="contact">
   <h2>Contact</h2>
 
   <ul>
@@ -89,39 +97,3 @@ layout: default
   </ul>
 </section>
 
-<script src="{{ site.url }}/js/rule.js"></script>
-<script src="{{ site.url }}/js/cell-grid.js"></script>
-<script src="{{ site.url }}/js/cellular-automaton.js"></script>
-<script>
-  (function () {
-    var ruleNumberId = 'rule-number',
-        canvasId = 'cellular-automaton',
-        cellSize = 2,
-        rowsPerSecond = 100;
-
-    document.addEventListener('DOMContentLoaded', function () {
-      var ruleNumber = document.getElementById(ruleNumberId);
-
-      var cellGrid = new CellGrid({
-        canvas: document.getElementById(canvasId),
-        cellSize: cellSize
-      });
-
-      var cellularAutomaton = new CellularAutomaton({
-        rule: new Rule(ruleNumber.valueAsNumber),
-        size: cellGrid.columns
-      });
-
-      cellularAutomaton.setCell(cellGrid.columns - 1, true);
-
-      window.setInterval(function () {
-        cellGrid.draw(cellularAutomaton);
-        cellularAutomaton.step();
-      }, 1000 / rowsPerSecond);
-
-      ruleNumber.addEventListener('change', function () {
-        cellularAutomaton.rule = new Rule(ruleNumber.valueAsNumber);
-      });
-    });
-  }());
-</script>
