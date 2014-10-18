@@ -1,12 +1,14 @@
 ---
 ---
 html {
-  background: gray;
+  background: #ddd;
 }
 
 body {
-  margin: auto;
-  padding: 30px;
+  margin: 0 auto;
+  border: solid #aaa;
+  border-width: 0 2px;
+  padding: 0 0 1em;
   font: 1em/1.4 "Helvetica Neue", Helvetica, sans-serif;
   max-width: 800px;
   background: white;
@@ -18,11 +20,10 @@ h2, h3 {
 }
 
 h1 {
-  margin-top: 0;
+  margin: 0;
+  padding: 0.5em;
   text-align: center;
-  font-family: Codystar;
-  font-size: 45px;
-  line-height: 1;
+  font: bold 45px/1 Codystar;
 }
 
 h1 a {
@@ -37,6 +38,7 @@ input[type=number] {
   font: inherit;
   outline: none;
   width: 3em;
+  background: inherit;
 }
 
 .inline-list {
@@ -48,4 +50,18 @@ input[type=number] {
     *display: inline;
     zoom: 1;
   }
+}
+
+.padded {
+  padding: 0 2em;
+}
+
+.bar {
+  background: #ddd;
+  padding: 0.5em 2em;
+  margin: 0;
+}
+
+.bordered {
+  border: 1px solid #ddd;
 }
