@@ -1,0 +1,9 @@
+<li>
+  <a href="{{ meeting.url }}">{{ meeting.date | date: "%A %-dth %B %Y" | replace: "1th", "1st" | replace: "2th", "2nd" | replace: "3th", "3rd" | replace: "11st", "11th" | replace: "12nd", "12th" | replace: "13rd", "13th" }}</a>
+  {% if meeting.write_up %}
+  <ul>
+    <li><a href="{{ meeting.write_up }}">Write-up</a></li>
+  </ul>
+  {% endif %}
+</li>
+
