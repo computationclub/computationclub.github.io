@@ -65,10 +65,21 @@ layout: default
 </section>
 
 <section>
+  <h2>Books we&rsquo;re reading</h2>
+
+  <ul>
+    {% assign books = site.data.books | where:"current", true | sort: "title" %}
+    {% for book in books %}
+    <li>
+      {{ book.authors | array_to_sentence_string }}, "<a href="{{ book.url }}">{{ book.title }}</a>" (<a href="{{ book.amazon_url }}">buy on Amazon</a>)
+    </li>
+    {% endfor %}
+  </ul>
+
   <h2>Books we&rsquo;ve read</h2>
 
   <ul>
-    {% assign books = site.data.books | sort: "title" %}
+    {% assign books = site.data.books | where:"current", false | sort: "title" %}
     {% for book in books %}
     <li>
       {{ book.authors | array_to_sentence_string }}, "<a href="{{ book.url }}">{{ book.title }}</a>" (<a href="{{ book.amazon_url }}">buy on Amazon</a>)
