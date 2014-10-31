@@ -1,0 +1,3 @@
+<li>
+  {{ book.authors | array_to_sentence_string }}, &ldquo;<a href="{{ book.url }}">{{ book.title }}</a>&rdquo; (<a href="{{ book.amazon_url }}">buy on Amazon</a>)
+</li>

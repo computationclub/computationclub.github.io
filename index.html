@@ -69,9 +69,7 @@ layout: default
   <ul>
     {% assign books = site.data.books | where:"current", true | sort: "title" %}
     {% for book in books %}
-    <li>
-      {{ book.authors | array_to_sentence_string }}, "<a href="{{ book.url }}">{{ book.title }}</a>" (<a href="{{ book.amazon_url }}">buy on Amazon</a>)
-    </li>
+      {% include book.html %}
     {% endfor %}
   </ul>
 
@@ -80,13 +78,11 @@ layout: default
   <ul>
     {% assign books = site.data.books | where:"current", false | sort: "title" %}
     {% for book in books %}
-    <li>
-      {{ book.authors | array_to_sentence_string }}, "<a href="{{ book.url }}">{{ book.title }}</a>" (<a href="{{ book.amazon_url }}">buy on Amazon</a>)
-    </li>
+      {% include book.html %}
     {% endfor %}
   </ul>
 
-  <p>If you buy these books using the Amazon links, London Computation Club gets a little kickback via the Amazon affiliate programme. We use that kickback to buy copies of the books for our library, to assist members or potential members who otherwise wouldn't be able to afford the book.<p>
+  <p>If you buy these books using the Amazon links, London Computation Club gets a little kickback via the Amazon affiliate programme. We use that kickback to buy copies of the books for our library, to assist members or potential members who otherwise wouldn&rsquo;t be able to afford the book.<p>
 </section>
 
 <section id="contact">
