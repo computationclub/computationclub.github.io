@@ -1,0 +1,19 @@
+---
+layout: null
+---
+{% assign meetings = site.data.meetings | sort: 'date' %}
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:http://london.computation.club/
+METHOD:PUBLISH
+{% for meeting in meetings reversed %}BEGIN:VEVENT
+UID:{{ meeting.date | date: "%Y%m%d" }}@london.computation.club
+DESCRIPTION:{{ meeting.plans }}
+SUMMARY:London Computation Club: {{ meeting.book }}
+CLASS:PUBLIC
+DTSTART:{{ meeting.date | date: "%Y%m%d" }}T183000Z
+DTEND:{{ meeting.date | date: "%Y%m%d" }}T203000Z
+DTSTAMP:{{ meeting.date | date: "%Y%m%d" }}T183000Z
+END:VEVENT
+{% endfor %}
+END:VCALENDAR
