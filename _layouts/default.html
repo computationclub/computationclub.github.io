@@ -9,7 +9,7 @@
   </head>
 
   <body>
-    <canvas id="cellular-automaton" width="800" height="50"></canvas>
+    <canvas id="cellular-automaton" width="400" height="25"></canvas>
 
     <h1><a href="{{ site.url }}/">London Computation Club</a></h1>
 
@@ -37,15 +37,13 @@
 
       (function () {
         var ruleNumberId = 'rule-number',
-            canvasId = 'cellular-automaton',
-            cellSize = 2;
+            canvasId = 'cellular-automaton';
 
         document.addEventListener('DOMContentLoaded', function () {
           var ruleNumber = document.getElementById(ruleNumberId);
 
           var cellGrid = new CellGrid({
-            canvas: document.getElementById(canvasId),
-            cellSize: cellSize
+            canvas: document.getElementById(canvasId)
           });
 
           var cellularAutomaton = new CellularAutomaton({
