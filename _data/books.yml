@@ -5,7 +5,7 @@
   url: http://www.nand2tetris.org/
   amazon_url: http://www.amazon.co.uk/gp/product/0262640686/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=0262640686&linkCode=as2&tag=computationclub-21&linkId=V3AATSECLKRZXF6W
   cover_url: /images/books/elements-computing-systems.jpeg
-  current: true
+  current: false
 
 - title: Understanding Computation
   authors:
