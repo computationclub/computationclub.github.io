@@ -72,10 +72,16 @@ adding yourself to the list.</em></p>
   <h2>Books we&rsquo;re reading</h2>
 
   <ul>
+    {% assign currently_reading = false %}
     {% assign books = site.data.books | where:"current", true | sort: "title" %}
     {% for book in books %}
+      {% assign currently_reading = true %}
       {% include book.html %}
     {% endfor %}
+
+    {% if currently_reading == false %}
+      <li>(none)</li>
+    {% endif %}
   </ul>
 
   <h2>Books we&rsquo;ve read</h2>
