@@ -1,139 +1,164 @@
 - date: 2015-11-03
+  title: Chapter 58, Predicate Calculus
   url: http://lanyrd.com/2015/london-computation-club-november/
   book: The New Turing Omnibus
   plans: https://groups.google.com/d/msg/london-computation-club/Bii3bcaZcu8/qAdFlg7nBwAJ
 
 - date: 2015-10-20
+  title: Chapter 35, Sequential Sorting
   url: http://lanyrd.com/2015/computationclub-2/
   book: The New Turing Omnibus
   plans: https://groups.google.com/d/msg/london-computation-club/EVTRiHSbyqA/TdBd04Z4CgAJ
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/The-New-Turing-Omnibus-Chapter-35-Sequential-Sorting
 
 - date: 2015-10-06
+  title: Chapter 8, Random Numbers
   url: http://lanyrd.com/2015/london-computation-club-october/
   book: The New Turing Omnibus
   plans: https://groups.google.com/d/msg/london-computation-club/8KFjK6kixwM/u_knBk9WBwAJ
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/The-New-Turing-Omnibus-Chapter-8-Random-Numbers
 
 - date: 2015-09-22
+  title: Chapter 11, Search Trees
   url: http://lanyrd.com/2015/london-computation-club-september/
   book: The New Turing Omnibus
   plans: https://groups.google.com/d/msg/london-computation-club/rVOUnG-o22U/xLNPV1W_AQAJ
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/The-New-Turing-Omnibus-Chapter-11-Search-Trees
 
 - date: 2015-09-08
+  title: What Next?
   url: http://lanyrd.com/2015/london-computation-club-what-next/
   plans: https://groups.google.com/d/msg/london-computation-club/9kQP5DxXgsg/L_ukJvdaAAAJ
 
 - date: 2015-08-18
+  title: Retrospective
   url: http://lanyrd.com/2015/london-computation-club-show-and-tell/
   plans: https://groups.google.com/d/msg/london-computation-club/FFULcAoN6mk/InFVmklgBgAJ
   book: Elements of Computing Systems (Building a Modern Computer from First Principles)
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/Elements-of-Computing-Systems-Retrospective
 
 - date: 2015-08-04
+  title: Chapter 12 (Part B)
   url: http://lanyrd.com/2015/london-computation-club-august/
   plans: https://groups.google.com/d/msg/london-computation-club/IReOHf5opvc/21z80_i0az4J
   book: Elements of Computing Systems (Building a Modern Computer from First Principles)
 
 - date: 2015-07-21
+  title: Chapter 12
   url: http://lanyrd.com/2015/london-computation-club-nand2tetris-meeting-12/
   plans: https://groups.google.com/d/msg/london-computation-club/OVGKdDgO-aA/7q7kmbvkZy4J
   book: Elements of Computing Systems (Building a Modern Computer from First Principles)
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/Elements-of-Computing-Systems-Chapter-12
 
 - date: 2015-07-07
+  title: Chapter 11 (Part C)
   url: http://lanyrd.com/2015/london-computation-club-july/
   plans: https://groups.google.com/d/msg/london-computation-club/DLzVl8h7Plo/NXFNE27eHHIJ
   book: Elements of Computing Systems (Building a Modern Computer from First Principles)
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/Elements-of-Computing-Systems-Chapter-11c
 
 - date: 2015-06-30
+  title: Chapter 11 (Part B)
   url: http://lanyrd.com/2015/london-computation-club-nand2tetris-meeting-11b/
   plans: https://groups.google.com/d/msg/london-computation-club/9LiTqUhJDow/v8rLbSCOw2cJ
   book: Elements of Computing Systems (Building a Modern Computer from First Principles)
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/Elements-of-Computing-Systems-Chapter-11b
 
 - date: 2015-06-16
+  title: Chapter 11
   url: http://lanyrd.com/2015/london-computation-club-june/
   plans: https://groups.google.com/d/msg/london-computation-club/h9SNwLrVwlU/7tLNcLoccKcJ
   book: Elements of Computing Systems (Building a Modern Computer from First Principles)
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/Elements-of-Computing-Systems-Chapter-11
 
 - date: 2015-06-02
+  title: Chapter 10 (Part B)
   url: http://lanyrd.com/2015/london-computation-club-nand2tetris-meeting-10b/
   book: Elements of Computing Systems (Building a Modern Computer from First Principles)
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/Elements-of-Computing-Systems-Chapter-10b
 
 - date: 2015-05-26
+  title: Chapter 10
   url: http://lanyrd.com/2015/london-computation-club-may/
   book: Elements of Computing Systems (Building a Modern Computer from First Principles)
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/Elements-of-Computing-Systems-Chapter-10
 
 - date: 2015-05-05
+  title: Chapter 9
   url: http://lanyrd.com/2015/london-computation-club-nand2tetris-meeting-9/
   plans: https://groups.google.com/d/msg/london-computation-club/l6_2TSZN0YU/uBbTUnurUtoJ
   book: Elements of Computing Systems (Building a Modern Computer from First Principles)
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/Elements-of-Computing-Systems-Chapter-9
 
 - date: 2015-04-14
+  title: Chapter 8
   url: http://lanyrd.com/2015/london-computation-club-april/
   plans: https://groups.google.com/d/msg/london-computation-club/zzpl9c9s5CY/1kX3P6xPUhAJ
   book: Elements of Computing Systems (Building a Modern Computer from First Principles)
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/Elements-of-Computing-Systems-Chapter-8
 
 - date: 2015-03-31
+  title: Chapter 7 (Part B)
   url: http://lanyrd.com/2015/london-computation-club-nand2tetris-meeting-7b/
   plans: https://groups.google.com/d/msg/london-computation-club/zPMfh96PTWQ/tFted-vZI-AJ
   book: Elements of Computing Systems (Building a Modern Computer from First Principles)
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/Elements-of-Computing-Systems-Chapter-7b
 
 - date: 2015-03-24
+  title: Chapter 7
   url: http://lanyrd.com/2015/london-computation-club-march/
   plans: https://groups.google.com/d/msg/london-computation-club/r8KxMtUUakQ/uFdWQikcu6oJ
   book: Elements of Computing Systems (Building a Modern Computer from First Principles)
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/Elements-of-Computing-Systems-Chapter-7
 
 - date: 2015-02-24
+  title: Chapter 6
   url: http://lanyrd.com/2015/london-computation-club-nand2tetris-meeting-6/
   plans: https://groups.google.com/d/msg/london-computation-club/NPY_Fnnc6p0/nocIePs6b8gJ
   book: Elements of Computing Systems (Building a Modern Computer from First Principles)
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/Elements-of-Computing-Systems-Chapter-6
 
 - date: 2015-02-10
+  title: Chapter 5 (Part B)
   url: http://lanyrd.com/2015/computationclub/
   book: Elements of Computing Systems (Building a Modern Computer from First Principles)
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/Elements-of-Computing-Systems-Chapter-5b
 
 - date: 2015-02-03
+  title: Chapter 5
   url: http://lanyrd.com/2015/london-computation-club-february/
   book: Elements of Computing Systems (Building a Modern Computer from First Principles)
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/Elements-of-Computing-Systems-Chapter-5
 
 - date: 2015-01-13
+  title: Chapter 4
   url: http://lanyrd.com/2015/london-computation-club/
   plans: https://groups.google.com/d/msg/london-computation-club/eTHQM8yAJ_k/3kFiBbug_2oJ
   book: Elements of Computing Systems (Building a Modern Computer from First Principles)
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/Elements-of-Computing-Systems-Chapter-4
 
 - date: 2014-12-16
+  title: Chapter 3
   url: http://lanyrd.com/2014/london-computation-club-december/
   book: Elements of Computing Systems (Building a Modern Computer from First Principles)
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/Elements-of-Computing-Systems-Chapter-3
 
 - date: 2014-11-25
+  title: Chapter 2
   url: http://lanyrd.com/2014/london-computation-club-nand2tetris-meeting-2/
   plans: https://groups.google.com/d/msg/london-computation-club/NexNGnv3FIo/q1aOLqxLaRoJ
   book: Elements of Computing Systems (Building a Modern Computer from First Principles)
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/Elements-of-Computing-Systems-Chapter-2
 
 - date: 2014-11-04
+  title: Chapter 1
   url: http://lanyrd.com/2014/london-computation-club-november/
   plans: https://groups.google.com/d/msg/london-computation-club/8mWclQpOu_Y/uZwy0ZvRq1kJ
   write_up: https://groups.google.com/d/msg/london-computation-club/oiTVvGynzYs/sHX7SRVXy3IJ
   book: Elements of Computing Systems (Building a Modern Computer from First Principles)
 
 - date: 2014-10-14
+  title: What Next?
   url: http://lanyrd.com/2014/london-computation-club/
   write_up: https://groups.google.com/d/msg/london-computation-club/5g8aTBRNyDk/DYw1-5rXj-cJ
 
