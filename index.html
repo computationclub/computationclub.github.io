@@ -65,14 +65,25 @@ adding yourself to the list.</em></p>
 <section id="past-meetings">
   <h2>Past meetings</h2>
 
-  <p>See <a href="https://github.com/computationclub/computationclub.github.io/wiki">our wiki</a> for write-ups of past meetings organised by book or see below for a chronological list of all past meetings.</p>
-
   <ul>
+  {% assign book = null %}
   {% for meeting in meetings reversed %}
     {% assign meeting_date = meeting.date | date: '%F' %}
+    {% if book != meeting.book %}
+      {% if book != null %}
+        </ul>
+      </li>
+      {% endif %}
+      {% if meeting.book %}
+      <li>
+        <strong>{{ meeting.book }}</strong>
+        <ul>
+      {% endif %}
+    {% endif %}
     {% if meeting_date < now %}
       {% include meeting.html %}
     {% endif %}
+    {% assign book = meeting.book %}
   {% endfor %}
   </ul>
 </section>
