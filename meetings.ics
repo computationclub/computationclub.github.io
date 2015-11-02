@@ -8,7 +8,7 @@ METHOD:PUBLISH
 {% for meeting in meetings reversed %}BEGIN:VEVENT
 UID:{{ meeting.date | date: "%Y%m%d" }}@london.computation.club
 DESCRIPTION:{{ meeting.plans }}
-SUMMARY:London Computation Club: {{ meeting.book }}
+SUMMARY:London Computation Club: {{ meeting.book }} {{ meeting.title }}
 CLASS:PUBLIC
 DTSTART:{{ meeting.date | date: "%Y%m%d" }}T183000Z
 DTEND:{{ meeting.date | date: "%Y%m%d" }}T203000Z
