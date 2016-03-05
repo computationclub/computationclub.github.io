@@ -13,8 +13,12 @@
   {% elsif meeting.plans %}
   <ul>
     <li>
-      <a href="{{ meeting.plans }}">Plans and suggested preparation</a><br>
-      <em>Please note, you are always welcome to come to the meeting even if you haven&rsquo;t completed any suggested preparation.</em>
+      <a href="{{ meeting.plans }}">Plans and suggested preparation</a>
+      {% assign meeting_date = meeting.date | date: '%F' %}
+      {% if meeting_date >= now %}
+        <br>
+        <em>Please note, you are always welcome to come to the meeting even if you haven&rsquo;t completed any suggested preparation.</em>
+      {% endif %}
     </li>
   </ul>
   {% endif %}
