@@ -3,12 +3,14 @@
   url: http://lanyrd.com/2016/london-computation-club-cellular-automata/
   book: The New Turing Omnibus
   plans: https://groups.google.com/d/msg/london-computation-club/rri0uVqQTDs/ssdBEPmDKAAJ
-
+  write_up: https://github.com/computationclub/computationclub.github.io/wiki/The-New-Turing-Omnibus-Chapter-44-Cellular-Automata
+  
 - date: 2016-03-15
   title: Sentient and Chapter 34, Satisfiability
   url: http://lanyrd.com/2016/london-computation-club-march/
   book: The New Turing Omnibus
   plans: https://groups.google.com/forum/#!topic/london-computation-club/BIWICIFJLtg
+  write_up: https://github.com/computationclub/computationclub.github.io/wiki/The-New-Turing-Omnibus-Chapter-34-Satisfiability-%28also-featuring%3A-Sentient%29
 
 - date: 2016-03-01
   title: Chapter 5, Gödel's Theorem
