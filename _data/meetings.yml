@@ -1,3 +1,8 @@
+- date: 2016-05-03
+  title: Chapter 12, Error-Correcting Codes
+  url: http://lanyrd.com/2016/london-computation-club-may/
+  book: The New Turing Omnibus
+
 - date: 2016-04-19
   title: Chapter 47, Storing Images
   url: http://lanyrd.com/2016/london-computation-club-storing-images/
@@ -10,7 +15,7 @@
   book: The New Turing Omnibus
   plans: https://groups.google.com/d/msg/london-computation-club/rri0uVqQTDs/ssdBEPmDKAAJ
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/The-New-Turing-Omnibus-Chapter-44-Cellular-Automata
-  
+
 - date: 2016-03-15
   title: Sentient and Chapter 34, Satisfiability
   url: http://lanyrd.com/2016/london-computation-club-march/
