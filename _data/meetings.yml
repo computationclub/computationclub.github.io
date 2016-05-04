@@ -2,12 +2,14 @@
   title: Chapter 12, Error-Correcting Codes
   url: http://lanyrd.com/2016/london-computation-club-error-correcting-codes/
   book: The New Turing Omnibus
+  write_up: https://github.com/computationclub/computationclub.github.io/wiki/The-New-Turing-Omnibus-Chapter-12-Error-Correcting-Codes
 
 - date: 2016-04-19
   title: Chapter 47, Storing Images
   url: http://lanyrd.com/2016/london-computation-club-storing-images/
   book: The New Turing Omnibus
   plans: https://groups.google.com/d/msg/london-computation-club/rAdyGBDaPls/C_DsTC3iAwAJ
+  write_up: https://github.com/computationclub/computationclub.github.io/wiki/The-New-Turing-Omnibus-Chapter-47-Storing-Images
 
 - date: 2016-04-05
   title: Chapter 44, Cellular Automata
