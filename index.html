@@ -5,7 +5,7 @@ layout: default
 {% assign now = site.time | date: '%F' %}
 {% assign meetings = site.data.meetings | sort: 'date' %}
 <section id="about">
-  <script async defer src="http://computationclub-slack.herokuapp.com/slackin.js"></script>
+  <script async defer src="http://computationclub-slack.herokuapp.com/slackin.js?large"></script>
 
   <p>The <b>London Computation Club</b> is a meet-up for people interested in one or more of the following:</p>
 
@@ -48,30 +48,10 @@ layout: default
   </p>
 </section>
 
-<section id="past-meetings">
-  <h2>Past meetings</h2>
+<section id="code-of-conduct">
+  <h2>Code of Conduct</h2>
 
-  <ul>
-  {% assign book = null %}
-  {% for meeting in meetings reversed %}
-    {% assign meeting_date = meeting.date | date: '%F' %}
-    {% if book != meeting.book %}
-      {% if book != null %}
-        </ul>
-      </li>
-      {% endif %}
-      {% if meeting.book %}
-      <li>
-        {{ meeting.book }}
-        <ul>
-      {% endif %}
-    {% endif %}
-    {% if meeting_date < now %}
-      {% include meeting.html %}
-    {% endif %}
-    {% assign book = meeting.book %}
-  {% endfor %}
-  </ul>
+  <p>It&rsquo;s of primary importance that everyone who wants to participate feels safe and welcome. When participating in the London Computation Club, either online or offline, at the meeting itself or at the pub afterwards, we expect you to respect our <a href="{{ site.url }}/code-of-conduct/">code of conduct</a>.</p>
 </section>
 
 <section id="books">
@@ -100,6 +80,32 @@ layout: default
   </ul>
 
   <p>If you buy these books using the Amazon links, London Computation Club gets a little kickback via the Amazon affiliate programme. We use that kickback to buy copies of the books for our library, to assist members or potential members who otherwise wouldn&rsquo;t be able to afford the book.<p>
+</section>
+
+<section id="past-meetings">
+  <h2>Past meetings</h2>
+
+  <ul>
+  {% assign book = null %}
+  {% for meeting in meetings reversed %}
+    {% assign meeting_date = meeting.date | date: '%F' %}
+    {% if book != meeting.book %}
+      {% if book != null %}
+        </ul>
+      </li>
+      {% endif %}
+      {% if meeting.book %}
+      <li>
+        {{ meeting.book }}
+        <ul>
+      {% endif %}
+    {% endif %}
+    {% if meeting_date < now %}
+      {% include meeting.html %}
+    {% endif %}
+    {% assign book = meeting.book %}
+  {% endfor %}
+  </ul>
 </section>
 
 <section id="contact">
