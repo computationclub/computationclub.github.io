@@ -18,7 +18,9 @@ layout: default
 </section>
 
 <section id="future-meetings">
-  <h2>Future meetings (<a href="/meetings.ics">iCal</a>)</h2>
+  <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39717.46269236757!2d-0.14365534753639914!3d51.52529743722824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cba93723535%3A0x6f6049fe92df0d80!2sGeckoboard!5e0!3m2!1sen!2suk!4v1468770940561" width="400" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+  <h2>Future meetings</h2>
 
   <ul>
   {% assign future_meetings_planned = false %}
@@ -31,9 +33,11 @@ layout: default
   {% endfor %}
 
   {% if future_meetings_planned == false %}
-    <li>(none)</li>
+    <li>The next meeting hasn&rsquo;t been announced yet, please check the <a href="https://groups.google.com/group/london-computation-club">mailing list</a> for more information.</li>
   {% endif %}
   </ul>
+
+  <p>Subscribe to <a href="/meetings.ics">future meetings in iCal format</a>.</p>
 
   <p>
     Everyone is welcome to get involved and help decide which chapter to read
