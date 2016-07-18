@@ -5,17 +5,15 @@ html {
 }
 
 body {
-  margin: 0 auto;
-  border: solid #aaa;
-  border-width: 0 2px;
+  margin: 0;
   padding: 0 0 1em;
-  font: 1em/1.4 "Helvetica Neue", Helvetica, sans-serif;
-  max-width: 800px;
+  font: 1em/1.4 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
   background: white;
 }
 
 h2, h3 {
-  font-family: Montserrat, sans-serif;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
   line-height: 1;
 }
 
@@ -23,7 +21,11 @@ h1 {
   margin: 0;
   padding: 0.5em;
   text-align: center;
-  font: bold 45px/1 Codystar;
+  font: 900 45px/200px Roboto, sans-serif;
+  background: #C6C5C0 url('/images/solution-tree.jpg') no-repeat center center;
+  background-size: 100%;
+  text-shadow: 2px 2px #ddd;
+  height: 200px;
 }
 
 h1 a {
@@ -31,42 +33,11 @@ h1 a {
   color: inherit;
 }
 
-input[type=number] {
-  border: none;
-  border-bottom: 1px dotted black;
-  padding: 0;
-  font: inherit;
-  outline: none;
-  width: 3em;
-  background: inherit;
-}
-
-.inline-list {
-  list-style: none;
-  padding: 0;
-
-  li {
-    display: inline-block;
-    *display: inline;
-    zoom: 1;
-  }
-}
-
 .padded {
   padding: 0 2em;
 }
 
-.bar {
-  background: #ddd;
-  padding: 0.5em 2em;
-  margin: 0;
-}
-
-.bordered {
-  border: 1px solid #ddd;
-}
-
-.__slackin {
+.__slackin, .map {
   float: right;
   margin: 0 0 1em 1em;
 }

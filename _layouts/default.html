@@ -4,68 +4,15 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link href="http://fonts.googleapis.com/css?family=Codystar%7CMontserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700,900" rel="stylesheet">
     <link href="{{ site.url }}/css/style.css" rel="stylesheet">
   </head>
 
   <body>
-    <canvas id="cellular-automaton" width="800" height="50"></canvas>
-
     <h1><a href="{{ site.url }}/">London Computation Club</a></h1>
-
-    <p class="bar">The first rule of London Computation Club is Rule <input id="rule-number" type="number" value="110" min="0" max="255">. The rest are in <a href="{{site.url }}/code-of-conduct/">our code of conduct</a>.</p>
 
     <div class="padded">
       {{ content }}
     </div>
-
-    <script src="{{ site.url }}/js/rule.js"></script>
-    <script src="{{ site.url }}/js/cell-grid.js"></script>
-    <script src="{{ site.url }}/js/cellular-automaton.js"></script>
-    <script>
-      /* requestAnim shim layer by Paul Irish */
-      window.requestAnimFrame = (function () {
-        return window.requestAnimationFrame ||
-               window.webkitRequestAnimationFrame ||
-               window.mozRequestAnimationFrame ||
-               window.oRequestAnimationFrame ||
-               window.msRequestAnimationFrame ||
-               function (callback) {
-                 window.setTimeout(callback, 1000 / 60);
-               };
-      }());
-
-      (function () {
-        var ruleNumberId = 'rule-number',
-            canvasId = 'cellular-automaton',
-            cellSize = 2;
-
-        document.addEventListener('DOMContentLoaded', function () {
-          var ruleNumber = document.getElementById(ruleNumberId);
-
-          var cellGrid = new CellGrid({
-            canvas: document.getElementById(canvasId),
-            cellSize: cellSize
-          });
-
-          var cellularAutomaton = new CellularAutomaton({
-            rule: new Rule(ruleNumber.valueAsNumber),
-            size: cellGrid.columns
-          });
-
-          cellularAutomaton.setCell(cellGrid.columns - 1, true);
-
-          (function render() {
-            requestAnimFrame(render);
-            cellGrid.draw(cellularAutomaton);
-            cellularAutomaton.step();
-          }());
-
-          ruleNumber.addEventListener('change', function () {
-            cellularAutomaton.rule = new Rule(ruleNumber.valueAsNumber);
-          });
-        });
-      }());
-    </script>
   </body>
 </html>
