@@ -4,13 +4,30 @@ layout: null
 {% assign meetings = site.data.meetings | sort: 'date' %}BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:http://london.computation.club/
+BEGIN:VTIMEZONE
+TZID:Europe/London
+BEGIN:STANDARD
+DTSTART:20001029T020000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=10
+TZNAME:GMT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20000326T010000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=3
+TZNAME:BST
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+END:DAYLIGHT
+END:VTIMEZONE
 {% for meeting in meetings reversed %}BEGIN:VEVENT
 UID:{{ meeting.date | date: "%Y%m%d" }}@london.computation.club
 DESCRIPTION:{{ meeting.plans }}
 SUMMARY:London Computation Club: {{ meeting.book }} {{ meeting.title }}
 CLASS:PUBLIC
-DTSTART:{{ meeting.date | date: '%s' | plus: 66600 | date: "%Y%m%dT%H%M%SZ" }}
-DTEND:{{ meeting.date | date: '%s' | plus: 73800 | date: "%Y%m%dT%H%M%SZ" }}
-DTSTAMP:{{ meeting.date | date: '%s' | plus: 66600 | date: "%Y%m%dT%H%M%SZ" }}
+DTSTART;TZID=Europe/London:{{ meeting.date | date: "%Y%m%dT183000" }}
+DURATION:PT2H0M0S
+DTSTAMP;TZID=Europe/London:{{ meeting.date | date: "%Y%m%dT183000" }}
 END:VEVENT
 {% endfor %}END:VCALENDAR
