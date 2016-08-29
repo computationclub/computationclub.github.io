@@ -2,6 +2,8 @@
   title: "Chapter 66, Church's Thesis"
   url: http://lanyrd.com/2016/london-computation-club-churchs-thesis/
   book: The New Turing Omnibus
+  plans: https://groups.google.com/d/msg/london-computation-club/oX5BrdRl4LI/bDxamIpcBwAJ
+  write_up: https://github.com/computationclub/computationclub.github.io/wiki/The-New-Turing-Omnibus-Chapter-66-Church%27s-Thesis
 
 - date: 2016-08-23
   title: "Cryptography, Padding Oracles"
