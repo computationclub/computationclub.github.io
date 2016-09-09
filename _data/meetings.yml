@@ -1,3 +1,9 @@
+- date: 2016-09-20
+  title: "Lambda Calculus"
+  url: http://lanyrd.com/2016/london-computation-club-lambda-calculus/
+  plans: https://groups.google.com/forum/#!topic/london-computation-club/e7pfovvOhUI
+  write_up: https://github.com/computationclub/computationclub.github.io/wiki/Lambda-Calculus
+
 - date: 2016-09-06
   title: "Chapter 66, Church's Thesis"
   url: http://lanyrd.com/2016/london-computation-club-churchs-thesis/
