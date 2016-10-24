@@ -1,11 +1,16 @@
+- date: 2016-11-01
+  title: "Sentient (almost) Beta launch"
+  url: https://attending.io/events/london-computation-club-sentient-almost-beta-launch
+  write_up: 
+  
 - date: 2016-10-18
-  title: "Minimum Spanning Trees"
+  title: "Chapter 22, Minimum Spanning Trees"
   url: http://lanyrd.com/2016/london-computation-club-minimum-spanning-trees/
   plans: https://groups.google.com/forum/#!topic/london-computation-club/FAlRyBIS6pM
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/The-New-Turing-Omnibus-Chapter-22:-Minimum-spanning-trees
 
 - date: 2016-10-04
-  title: "Text Compression"
+  title: "Chapter 52, Text Compression"
   url: http://lanyrd.com/2016/london-computation-club-text-compression
   plans: https://groups.google.com/forum/#!topic/london-computation-club/EsnMFAQn13k
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/The-New-Turing-Omnibus-Chapter-52-Text-Compression
