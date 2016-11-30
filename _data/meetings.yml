@@ -1,27 +1,31 @@
 - date: 2016-11-29
   title: "Chapter 60, Computer Viruses"
   url: https://attending.io/events/london-computation-club-computer-viruses
+  book: The New Turing Omnibus
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/The-New-Turing-Omnibus-Chapter-60-Computer-Viruses
 
 - date: 2016-11-16
   title: "Chapter 64, Logic Programming"
   url: https://attending.io/events/london-computation-club-logic-programming
+  book: The New Turing Omnibus
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/The-New-Turing-Omnibus-Chapter-64:-Logic-Programming
 
 - date: 2016-11-01
   title: "Sentient (almost) Beta launch"
   url: https://attending.io/events/london-computation-club-sentient-almost-beta-launch
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/Sentient-Beta-Launch
-  
+
 - date: 2016-10-18
   title: "Chapter 22, Minimum Spanning Trees"
   url: http://lanyrd.com/2016/london-computation-club-minimum-spanning-trees/
+  book: The New Turing Omnibus
   plans: https://groups.google.com/forum/#!topic/london-computation-club/FAlRyBIS6pM
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/The-New-Turing-Omnibus-Chapter-22:-Minimum-spanning-trees
 
 - date: 2016-10-04
   title: "Chapter 52, Text Compression"
   url: http://lanyrd.com/2016/london-computation-club-text-compression
+  book: The New Turing Omnibus
   plans: https://groups.google.com/forum/#!topic/london-computation-club/EsnMFAQn13k
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/The-New-Turing-Omnibus-Chapter-52-Text-Compression
 
