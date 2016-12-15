@@ -4,7 +4,7 @@
   url: http://us.macmillan.com/thenewturingomnibus/akdewdney
   amazon_url: http://www.amazon.co.uk/gp/product/0805071660/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=0805071660&linkCode=as2&tag=computationclub-21
   cover_url: /images/books/the-new-turing-omnibus.jpg
-  current: true
+  current: false
 
 - title: Elements of Computing Systems (Building a Modern Computer from First Principles)
   authors:
