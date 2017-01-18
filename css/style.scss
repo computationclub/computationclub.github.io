@@ -1,14 +1,17 @@
 ---
 ---
 html {
-  background: #ddd;
+  background: #eee;
 }
 
 body {
-  margin: 0;
+  margin: 0 auto 1em auto;
   padding: 0 0 1em;
   font: 1em/1.4 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
   background: white;
+  max-width: 70em;
+  border: 2px solid #ddd;
+  border-width: 0 2px 2px 2px;
 }
 
 h2, h3 {
@@ -39,5 +42,20 @@ h1 a {
 
 .__slackin, .map {
   float: right;
+}
+
+.__slackin {
   margin: 0 0 1em 1em;
+}
+
+.map {
+  margin: 1em;
+}
+
+.box {
+  border: 2px solid #eed;
+  overflow: auto;
+  zoom: 1;
+  background: #ffe;
+  padding: 0 1em;
 }
