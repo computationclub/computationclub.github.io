@@ -1,6 +1,26 @@
+- date: 2017-03-21
+  title: "Interstitial, non-TAPL Meeting"
+
+- date: 2017-03-07
+  title: "Third TAPL Meeting"
+  book: Types and Programming Languages
+
+- date: 2017-02-21
+  title: "Second TAPL Meeting"
+  book: Types and Programming Languages
+
+- date: 2017-02-07
+  title: "First TAPL Meeting"
+  book: Types and Programming Languages
+
+- date: 2017-01-31
+  title: "Pre-TAPL Computation Pub"
+  url: http://london.computation.pub
+
 - date: 2017-01-17
   title: "What Next?"
   url: https://attending.io/events/london-computation-club-what-next
+  write_up: https://github.com/computationclub/computationclub.github.io/wiki/What-Next%3F-January-2017
 
 - date: 2016-12-13
   title: "2016 Retrospective"
@@ -204,6 +224,7 @@
   title: What Next?
   url: http://lanyrd.com/2015/london-computation-club-what-next/
   plans: https://groups.google.com/d/msg/london-computation-club/9kQP5DxXgsg/L_ukJvdaAAAJ
+  write_up: https://github.com/computationclub/computationclub.github.io/wiki/Things-to-read-or-do-next
 
 - date: 2015-08-18
   title: Retrospective

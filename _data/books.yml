@@ -1,3 +1,10 @@
+- title: Types and Programming Languages
+  authors:
+    - Benjamin C. Pierce
+  url: https://www.cis.upenn.edu/~bcpierce/tapl/
+  cover_url: /images/books/types-and-programming-languages.jpg
+  current: true
+
 - title: The New Turing Omnibus
   authors:
     - A. K. Dewdney
