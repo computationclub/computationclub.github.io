@@ -23,7 +23,7 @@ layout: default
 
   <ul>
   {% assign future_meetings_planned = false %}
-  {% for meeting in meetings reversed %}
+  {% for meeting in meetings %}
     {% assign meeting_date = meeting.date | date: '%F' %}
     {% if meeting_date >= now %}
       {% assign future_meetings_planned = true %}
