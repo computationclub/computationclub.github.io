@@ -115,18 +115,18 @@ layout: default
   {% assign book = null %}
   {% for meeting in meetings reversed %}
     {% assign meeting_date = meeting.date | date: '%F' %}
-    {% if book != meeting.book %}
-      {% if book != null %}
-        </ul>
-      </li>
-      {% endif %}
-      {% if meeting.book %}
-      <li>
-        {{ meeting.book }}
-        <ul>
-      {% endif %}
-    {% endif %}
     {% if meeting_date < now %}
+      {% if book != meeting.book %}
+        {% if book != null %}
+          </ul>
+        </li>
+        {% endif %}
+        {% if meeting.book %}
+        <li>
+          {{ meeting.book }}
+          <ul>
+        {% endif %}
+      {% endif %}
       {% include meeting.html %}
     {% endif %}
     {% assign book = meeting.book %}
