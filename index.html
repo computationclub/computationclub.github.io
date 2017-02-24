@@ -112,11 +112,11 @@ layout: default
   <h2>Past meetings</h2>
 
   <ul>
-  {% assign previous_book = "start" %}
+  {% assign previous_book = null %}
   {% for meeting in meetings reversed %}
     {% assign meeting_date = meeting.date | date: '%F' %}
     {% if meeting_date < now %}
-      {% if previous_book == "start" %}
+      {% if forloop.first %}
         {% include start_book.html %}
       {% elsif previous_book != meeting.book %}
         {% include end_book.html %}
