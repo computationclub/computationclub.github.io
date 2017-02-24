@@ -1,0 +1,8 @@
+{% if meeting.book %}
+<li>
+  {{ meeting.book }}
+  <ul>
+    {% include meeting.html %}
+{% else %}
+  {% include meeting.html %}
+{% endif %}
