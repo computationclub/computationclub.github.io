@@ -7,7 +7,6 @@ http://london.computation.club/
 
 * [Ruby](https://www.ruby-lang.org/en/);
 * [Bundler](http://bundler.io/);
-* [Foreman](http://ddollar.github.io/foreman/) (optional).
 
 ## Installation
 
@@ -15,7 +14,5 @@ http://london.computation.club/
 $ git clone https://github.com/computationclub/computationclub.github.io.git
 $ cd computationclub.github.io
 $ bundle install
-$ foreman start
-// or
 $ jekyll serve --watch
 ```
