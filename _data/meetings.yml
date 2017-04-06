@@ -1,3 +1,11 @@
+- date: 2017-05-23
+  title: "Types and Programming Languages #7: Chapter 10"
+  book: Types and Programming Languages
+
+- date: 2017-05-09
+  title: "Types and Programming Languages #6: Chapter 9"
+  book: Types and Programming Languages
+
 - date: 2017-04-25
   title: "Types and Programming Languages #5: Chapter 8"
   book: Types and Programming Languages
@@ -6,7 +14,6 @@
   
 - date: 2017-04-04
   title: "The Shunting Yard Algorithm, or, Train Braining"
-  book: N/A
   url: https://attending.io/events/london-computation-club-the-shunting-yard-algorithm
   plans: https://groups.google.com/d/msg/london-computation-club/8-cfsPjg-ck/jb1l9jALAgAJ
 
