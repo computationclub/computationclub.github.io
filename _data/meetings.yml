@@ -1,8 +1,7 @@
 - date: 2017-07-11
   title: "Interstitial on Parsers"
-  book: "no book"
   url: https://attending.io/events/london-computation-club-interstitial-on-parsers
-  plans: https://groups.google.com/forum/#!topic/london-computation-club/DmIQDIvsfu0
+  plans: https://blog.jcoglan.com/2017/07/06/introduction-to-parser-combinators/
 
 - date: 2017-06-27
   title: "Types and Programming Languages #9: Chapter 11 Redux + implementation"
