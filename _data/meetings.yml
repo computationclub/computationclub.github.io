@@ -1,12 +1,14 @@
 - date: 2017-07-25
   title: "Types and Programming Languages #10: Chapter 13 References"
   url: https://attending.io/events/london-computation-club-ch-13-references
-  plans: https://groups.google.com/forum/#!topic/london-computation-club/iTsGXaVcrRA
+  plans: https://groups.google.com/d/msg/london-computation-club/iTsGXaVcrRA/KkPNTm6-BwAJ
+  write_up: https://github.com/computationclub/computationclub.github.io/wiki/Types-and-Programming-Languages-Chapter-13-References
 
 - date: 2017-07-22
   title: "Bletchley Park"
   url: https://attending.io/events/london-computation-club-bletchley-park-trip
   plans: https://groups.google.com/d/msg/london-computation-club/cDAx76W-OaA/fIZX9s_uAQAJ
+  write_up: https://github.com/computationclub/computationclub.github.io/wiki/Bletchley-Park
 
 - date: 2017-07-11
   title: "Interstitial on Parsers"
