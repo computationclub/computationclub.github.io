@@ -1,7 +1,12 @@
+- date: 2017-08-22
+  title: "Types and Programming Languages #12: Chapter 15 Subtyping"
+  url: https://attending.io/events/london-computation-club-tapl-subtyping
+
 - date: 2017-08-08
   title: "Types and Programming Languages #11: Chapter 14 Exceptions"
   url: https://attending.io/events/london-computation-club-ch-14-exceptions
   plans: https://groups.google.com/forum/#!topic/london-computation-club/g48kfFiQQUU
+  write_up: https://github.com/computationclub/computationclub.github.io/wiki/Types-and-Programming-Languages-Chapter-14-Exceptions
 
 - date: 2017-07-25
   title: "Types and Programming Languages #10: Chapter 13 References"
