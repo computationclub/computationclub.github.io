@@ -1,12 +1,14 @@
 - date: 2017-09-05
-  title: "Types and Programming Languages #13: Chapter 15 Subtyping (Continued)"
+  title: "Types and Programming Languages #13: Chapter 15 Subtyping – Part 2"
   url: https://attending.io/events/london-computation-club-types-and-programming-languages-chapter-15-subtyping-continued
+  plans: https://groups.google.com/forum/#!topic/london-computation-club/AjUK6r5Y5d0
+  write_up: https://github.com/computationclub/computationclub.github.io/wiki/Types-and-Programming-Languages-Chapter-15-Subtyping-%E2%80%93-Part-2
 
 - date: 2017-08-22
-  title: "Types and Programming Languages #12: Chapter 15 Subtyping"
+  title: "Types and Programming Languages #12: Chapter 15 Subtyping – Part 1"
   url: https://attending.io/events/london-computation-club-tapl-subtyping
   plans: https://groups.google.com/d/msg/london-computation-club/YTWKsb1qJWw/lpjttBsdAgAJ
-  write_up: https://github.com/computationclub/computationclub.github.io/wiki/Types-and-Programming-Languages-Chapter-15-Subtyping
+  write_up: https://github.com/computationclub/computationclub.github.io/wiki/Types-and-Programming-Languages-Chapter-15-Subtyping-%E2%80%93-Part-1
 
 - date: 2017-08-08
   title: "Types and Programming Languages #11: Chapter 14 Exceptions"
