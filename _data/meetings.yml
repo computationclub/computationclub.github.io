@@ -1,7 +1,8 @@
 - date: 2017-10-10
   title: "Types and Programming Languages #15: Chapter 17 An ML Implementation of Subtyping"
   url: https://attending.io/events/london-computation-club-ch-17-an-ml-implementation-of-subtyping
-  plans: https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!msg/london-computation-club/H5K_lownPAs/UFzAFr39HAAJ
+  plans: https://groups.google.com/forum/#!topic/london-computation-club/5pNs2ysG6Aw
+  write_up: https://github.com/computationclub/computationclub.github.io/wiki/Types-and-Programming-Languages-Chapter-16-(Implementation-Edition)
 
 - date: 2017-09-19
   title: "Types and Programming Languages #14: Chapter 16 Metatheory of Subtyping"
@@ -83,7 +84,7 @@
 - date: 2017-04-18
   title: "TAPL & Easter Computation Pub"
   url: http://london.computation.pub
-  
+
 - date: 2017-04-04
   title: "The Shunting Yard Algorithm, or, Train Braining"
   url: https://attending.io/events/london-computation-club-the-shunting-yard-algorithm
