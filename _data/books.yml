@@ -4,7 +4,7 @@
   url: https://www.cis.upenn.edu/~bcpierce/tapl/
   amazon_url: http://amzn.to/2iPlwbj
   cover_url: /images/books/types-and-programming-languages.jpg
-  current: true
+  current: false
 
 - title: The New Turing Omnibus
   authors:
