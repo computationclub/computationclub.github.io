@@ -11,48 +11,56 @@
 
 - date: 2017-11-10
   title: "Types and Programming Languages #17: Chapter 19 Case Study: Featherweight Java"
+  book: Types and Programming Languages
   url: https://attending.io/events/london-computation-club-tapl-ch19-case-study-featherweight-java
   plans: "https://groups.google.com/forum/#!topic/london-computation-club/97L6uE71axk"
   write_up: "https://github.com/computationclub/computationclub.github.io/wiki/Types-and-Programming-Languages-Chapter-19-Case-Study-Featherweight-Java"
   
 - date: 2017-10-24
   title: "Types and Programming Languages #16: Chapter 18 Case Study: Imperative Objects"
+  book: Types and Programming Languages
   url: https://attending.io/events/london-computation-club-tapl-ch18-case-study-imperative-objects
   plans: https://groups.google.com/forum/#!topic/london-computation-club/wKqNFx9TLCA
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/Types-and-Programming-Languages-Chapter-18-Case-Study-Imperative-Objects
 
 - date: 2017-10-10
   title: "Types and Programming Languages #15: Chapter 17 An ML Implementation of Subtyping"
+  book: Types and Programming Languages
   url: https://attending.io/events/london-computation-club-ch-17-an-ml-implementation-of-subtyping
   plans: https://groups.google.com/forum/#!topic/london-computation-club/5pNs2ysG6Aw
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/Types-and-Programming-Languages-Chapter-16-(Implementation-Edition)
 
 - date: 2017-09-19
   title: "Types and Programming Languages #14: Chapter 16 Metatheory of Subtyping"
+  book: Types and Programming Languages
   url: https://attending.io/events/london-computation-club-ch-16-metatheory-of-subtyping
   plans: https://groups.google.com/d/msg/london-computation-club/xMj0dn1Flb4/PhMNsWb6AQAJ
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/Types-and-Programming-Languages-Chapter-16-Metatheory-of-Subtyping
 
 - date: 2017-09-05
   title: "Types and Programming Languages #13: Chapter 15 Subtyping – Part 2"
+  book: Types and Programming Languages
   url: https://attending.io/events/london-computation-club-types-and-programming-languages-chapter-15-subtyping-continued
   plans: https://groups.google.com/forum/#!topic/london-computation-club/AjUK6r5Y5d0
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/Types-and-Programming-Languages-Chapter-15-Subtyping-%E2%80%93-Part-2
 
 - date: 2017-08-22
   title: "Types and Programming Languages #12: Chapter 15 Subtyping – Part 1"
+  book: Types and Programming Languages
   url: https://attending.io/events/london-computation-club-tapl-subtyping
   plans: https://groups.google.com/d/msg/london-computation-club/YTWKsb1qJWw/lpjttBsdAgAJ
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/Types-and-Programming-Languages-Chapter-15-Subtyping-%E2%80%93-Part-1
 
 - date: 2017-08-08
   title: "Types and Programming Languages #11: Chapter 14 Exceptions"
+  book: Types and Programming Languages
   url: https://attending.io/events/london-computation-club-ch-14-exceptions
   plans: https://groups.google.com/forum/#!topic/london-computation-club/g48kfFiQQUU
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/Types-and-Programming-Languages-Chapter-14-Exceptions
 
 - date: 2017-07-25
   title: "Types and Programming Languages #10: Chapter 13 References"
+  book: Types and Programming Languages
   url: https://attending.io/events/london-computation-club-ch-13-references
   plans: https://groups.google.com/d/msg/london-computation-club/iTsGXaVcrRA/KkPNTm6-BwAJ
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/Types-and-Programming-Languages-Chapter-13-References
