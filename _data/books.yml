@@ -5,7 +5,7 @@
     - Jack Moffitt
     - Ian Dees
   url: https://pragprog.com/book/7lang/seven-more-languages-in-seven-weeks
-  amazon_url: http://amzn.to/2hW6hQi
+  blackwells_url: http://affiliates.blackwells.co.uk/scripts/h9x2deco?a_aid=computationclub&desturl=http%3A%2F%2Fbookshop.blackwell.co.uk%2Fbookshop%2Fproduct%2FSeven-More-Languages-in-Seven-Weeks-by-Bruce-Tate-Ian-Dees-Frederic-Daoud-Jack-Moffit%2F9781941222157
   cover_url: /images/books/seven-more-languages.jpg
   current: true
 
@@ -13,7 +13,7 @@
   authors:
     - Benjamin C. Pierce
   url: https://www.cis.upenn.edu/~bcpierce/tapl/
-  amazon_url: http://amzn.to/2iPlwbj
+  blackwells_url: http://affiliates.blackwells.co.uk/scripts/h9x2deco?a_aid=computationclub&desturl=http%3A%2F%2Fbookshop.blackwell.co.uk%2Fbookshop%2Fproduct%2FTypes-and-Programming-Languages-by-Benjamin-C-Pierce%2F9780262162098
   cover_url: /images/books/types-and-programming-languages.jpg
   current: false
 
@@ -21,7 +21,7 @@
   authors:
     - A. K. Dewdney
   url: http://us.macmillan.com/thenewturingomnibus/akdewdney
-  amazon_url: http://www.amazon.co.uk/gp/product/0805071660/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=0805071660&linkCode=as2&tag=computationclub-21
+  blackwells_url: http://affiliates.blackwells.co.uk/scripts/h9x2deco?a_aid=computationclub&desturl=http%3A%2F%2Fbookshop.blackwell.co.uk%2Fbookshop%2Fproduct%2FThe-New-Turing-Omnibus-by-A-K-Dewdney%2F9780805071665
   cover_url: /images/books/the-new-turing-omnibus.jpg
   current: false
 
@@ -30,7 +30,7 @@
     - Noam Nisan
     - Shimon Schocken
   url: http://www.nand2tetris.org/
-  amazon_url: http://www.amazon.co.uk/gp/product/0262640686/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=0262640686&linkCode=as2&tag=computationclub-21&linkId=V3AATSECLKRZXF6W
+  blackwells_url: http://affiliates.blackwells.co.uk/scripts/h9x2deco?a_aid=computationclub&desturl=http%3A%2F%2Fbookshop.blackwell.co.uk%2Fbookshop%2Fproduct%2FThe-Elements-of-Computing-Systems-by-Noam-Nisan-Shimon-Schocken%2F9780262640688
   cover_url: /images/books/elements-computing-systems.jpeg
   current: false
 
@@ -38,7 +38,7 @@
   authors:
     - Tom Stuart
   url: http://computationbook.com/
-  amazon_url: http://www.amazon.co.uk/gp/product/1449329276/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=1449329276&linkCode=as2&tag=computationclub-21&linkId=Y33MSPW2C4U3YVP5
+  blackwells_url: http://affiliates.blackwells.co.uk/scripts/h9x2deco?a_aid=computationclub&desturl=http%3A%2F%2Fbookshop.blackwell.co.uk%2Fbookshop%2Fproduct%2FUnderstanding-Computation-by-Tom-Stuart%2F9781449329273
   cover_url: /images/books/understanding-computation.png
   current: false
 
@@ -47,6 +47,6 @@
     - Daniel P. Friedman
     - Matthias Felleisen
   url: http://www.ccs.neu.edu/home/matthias/BTLS/
-  amazon_url: http://www.amazon.co.uk/gp/product/0262560992/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=0262560992&linkCode=as2&tag=computationclub-21&linkId=7LA3DI5O7QPJD2UM
+  blackwells_url: http://affiliates.blackwells.co.uk/scripts/h9x2deco?a_aid=computationclub&desturl=http%3A%2F%2Fbookshop.blackwell.co.uk%2Fbookshop%2Fproduct%2FThe-Little-Schemer-by-Daniel-P-Friedman-Matthias-Felleisen%2F9780262560993
   cover_url: /images/books/the-little-schemer.png
   current: false
