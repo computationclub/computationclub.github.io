@@ -2,7 +2,7 @@
 
 - [ ] Assign yourself this issue! (If you're not a member of [London Computation Club](https://github.com/computationclub) on GitHub, ask someone on Slack to add you.)
 - [ ] Make sure you have access to the [Buffer](http://buffer.com) account for the club - this is how you'll tweet. (Ask on #general in Slack and someone will DM you the credentials.)
-- [ ] Make sure you can commit to the Computation Club website repository
+- [ ] Make sure you can commit to the Computation Club website repository (Ask on #general in Slack and an administrator will add you to the organisation.)
 
 ### The day after you're assigned
 
@@ -19,7 +19,7 @@
 
 ### Same day / A few days later (but not too long!)
 
-- [ ] Double check that someone (Leo or Dan) at Geckoboard is able to host on the planned date; if not:
+- [ ] Double check with Leo that Geckoboard is able to host on the planned date; if not:
   * [ ] Make a Doodle poll with potential dates
   * [ ] Announce the poll on Slack
   * [ ] Announce the poll on the mailing list
@@ -36,12 +36,13 @@
 
 ### A day or two before the meeting
 
+- [ ] Find a volunteer to open and close the meeting using our [standard opening](https://github.com/computationclub/computationclub.github.io/wiki/Starting-a-meeting) and [closing remarks](https://github.com/computationclub/computationclub.github.io/wiki/Running-a-retrospective)
 - [ ] Remind people about the next meeting
   * [ ] Slack
   * [ ] The [mailing list](https://groups.google.com/forum/#!forum/london-computation-club)
   * [ ] Twitter
-- [ ] [Update the meeting checklist template](https://github.com/computationclub/computationclub.github.io/wiki/Checklist-Template%3A-Book-Meeting/_edit) based on your experiences using it. Maybe we've missed something, or the timings need to be improved?
-- [ ] Copy [the source of meeting checklist template](https://github.com/computationclub/computationclub.github.io/wiki/Checklist-Template%3A-Book-Meeting/_edit) to a new issue, called "Organise next meeting".
+- [ ] [Update the meeting checklist template](https://github.com/computationclub/computationclub.github.io/edit/master/.github/issue_template.md) based on your experiences using it. Maybe we've missed something, or the timings need to be improved?
+- [ ] Open a new issue with the above template, called "Organise next meeting".
 
 ### At the meeting
 
