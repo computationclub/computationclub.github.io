@@ -37,6 +37,7 @@
 ### A day or two before the meeting
 
 - [ ] Find a volunteer to open and close the meeting using our [standard opening](https://github.com/computationclub/computationclub.github.io/wiki/Starting-a-meeting) and [closing remarks](https://github.com/computationclub/computationclub.github.io/wiki/Running-a-retrospective)
+- [ ] Find a volunteer to share the chapter during the meeting via AirPlay
 - [ ] Remind people about the next meeting
   * [ ] Slack
   * [ ] The [mailing list](https://groups.google.com/forum/#!forum/london-computation-club)
