@@ -1,14 +1,20 @@
+- date: 2018-05-22
+  title: "7 More Languages in 7 Weeks: Elixir, Day 1"
+  url: https://attending.io/events/seven-more-languages-in-seven-weeks-elixir-day-1
+  plans: https://groups.google.com/d/msg/london-computation-club/f1lK3ikVeG0/8rX6IbmlBwAJ
+
 - date: 2018-05-08
   title: "7 More Languages in 7 Weeks: Elm, Day 3 (off-book)"
   url: https://attending.io/events/seven-languages-in-seven-weeks-elm-day-3-off-book
   plans: https://groups.google.com/d/msg/london-computation-club/lmcfPhBiPf0/lcvYB0kAAwAJ
+  write_up: https://github.com/computationclub/computationclub.github.io/wiki/7ML7W-Elm-Day-3-The-Elm-Architecture
 
 - date: 2018-04-17
   title: "7 More Languages in 7 Weeks: Elm, Day 2 (off-book)"
   url: https://attending.io/events/seven-languages-in-seven-weeks-elm-day-2-revised
   plans: https://groups.google.com/forum/#!topic/london-computation-club/tSxo9B0AX2A
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/7ML7W-Elm-Day-2-The-Elm-Architecture
-  
+
 - date: 2018-04-03
   title: "7 More Languages in 7 Weeks: Elm, Day 1"
   url: https://attending.io/events/computation-club-7-more-languages-in-7-weeks-elm-day-1
@@ -74,7 +80,7 @@
   url: https://attending.io/events/london-computation-club-tapl-ch19-case-study-featherweight-java
   plans: "https://groups.google.com/forum/#!topic/london-computation-club/97L6uE71axk"
   write_up: "https://github.com/computationclub/computationclub.github.io/wiki/Types-and-Programming-Languages-Chapter-19-Case-Study-Featherweight-Java"
-  
+
 - date: 2017-10-24
   title: "Types and Programming Languages #16: Chapter 18 Case Study: Imperative Objects"
   book: Types and Programming Languages
