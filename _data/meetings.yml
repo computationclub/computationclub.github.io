@@ -2,66 +2,77 @@
   title: "7 More Languages in 7 Weeks: Elixir, Day 2"
   url: https://attending.io/events/computation-club-seven-more-languages-in-seven-weeks-elixir-day-2
   plans: https://groups.google.com/forum/#!topic/london-computation-club/xQSYMUWawY8
+  book: "7 More Languages in 7 Weeks"
 
 - date: 2018-05-22
   title: "7 More Languages in 7 Weeks: Elixir, Day 1"
   url: https://attending.io/events/seven-more-languages-in-seven-weeks-elixir-day-1
   plans: https://groups.google.com/d/msg/london-computation-club/f1lK3ikVeG0/8rX6IbmlBwAJ
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/7ML7W-Elixir-Day-1-Laying-a-Great-Foundation
+  book: "7 More Languages in 7 Weeks"
 
 - date: 2018-05-08
   title: "7 More Languages in 7 Weeks: Elm, Day 3 (off-book)"
   url: https://attending.io/events/seven-languages-in-seven-weeks-elm-day-3-off-book
   plans: https://groups.google.com/d/msg/london-computation-club/lmcfPhBiPf0/lcvYB0kAAwAJ
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/7ML7W-Elm-Day-3-The-Elm-Architecture
+  book: "7 More Languages in 7 Weeks"
 
 - date: 2018-04-17
   title: "7 More Languages in 7 Weeks: Elm, Day 2 (off-book)"
   url: https://attending.io/events/seven-languages-in-seven-weeks-elm-day-2-revised
   plans: https://groups.google.com/forum/#!topic/london-computation-club/tSxo9B0AX2A
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/7ML7W-Elm-Day-2-The-Elm-Architecture
+  book: "7 More Languages in 7 Weeks"
 
 - date: 2018-04-03
   title: "7 More Languages in 7 Weeks: Elm, Day 1"
   url: https://attending.io/events/computation-club-7-more-languages-in-7-weeks-elm-day-1
   plans: https://groups.google.com/d/msg/london-computation-club/2bCB1NfOIvc/hod6QlP6BgAJ
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/7ML7W-Elm-Day-1-Handling-the-Basics
+  book: "7 More Languages in 7 Weeks"
 
 - date: 2018-03-20
   title: "7 More Languages in 7 Weeks: Factor, Day 3"
   url: https://attending.io/events/computation-club-7-more-languages-in-7-weeks-factor-day-3
   plans: https://groups.google.com/forum/#!topic/london-computation-club/Up6u3MvfKR8
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/7ML7W-Factor-Day-3-Balancing-on-a-Boat
+  book: "7 More Languages in 7 Weeks"
 
 - date: 2018-03-06
   title: "7 More Languages in 7 Weeks: Factor, Day 2"
   url: https://attending.io/events/computation-club-7-more-languages-in-7-weeks-factor-day-2
   plans: https://groups.google.com/d/msg/london-computation-club/RNQu1xVsPfc/mW-KVHHgAQAJ
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/7ML7W-Factor-Day-2-Painting-the-Fence
+  book: "7 More Languages in 7 Weeks"
 
 - date: 2018-02-20
   title: "7 More Languages in 7 Weeks: Factor, Day 1"
   url: https://attending.io/events/computation-club-7-more-languages-in-7-weeks-factor-day-1
   plans: https://groups.google.com/d/msg/london-computation-club/dBd1J9Zsy1I/f1jpIKvDCgAJ
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/7ML7W-Factor-Day-1-Stack-On-Stack-Off
+  book: "7 More Languages in 7 Weeks"
 
 - date: 2018-02-08
   title: "7 More Languages in 7 Weeks: Lua, Day 3"
   url: https://attending.io/events/computation-club-7-more-languages-in-7-weeks-lua-day-3
   plans: https://groups.google.com/d/msg/london-computation-club/ETIjSD9fREw/SDZKnGO3BQAJ
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/7ML7W-Lua-Day-3
+  book: "7 More Languages in 7 Weeks"
 
 - date: 2018-01-25
   title: "7 More Languages in 7 Weeks: Lua, Day 2"
   url: https://attending.io/events/computation-club-7-more-languages-in-7-weeks-lua-day-2
   plans: https://groups.google.com/d/msg/london-computation-club/H5a28ND_Uyo/MZqIcWGrAQAJ
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/7ML7W-Lua-Day-2-Tables-All-the-Way-Down
+  book: "7 More Languages in 7 Weeks"
 
 - date: 2018-01-11
   title: "7 More Languages in 7 Weeks: Lua, Day 1"
   url: https://attending.io/events/computation-club-7-more-languages-in-7-weeks-lua-day-1
   plans: https://groups.google.com/d/msg/london-computation-club/cgLIqGQYo6A/k3wA_3dYDQAJ
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/7ML7W-Lua-Day-1-The-Call-to-Adventure
+  book: "7 More Languages in 7 Weeks"
 
 - date: 2017-12-19
   title: "Computation Pub, Festive Edition"
