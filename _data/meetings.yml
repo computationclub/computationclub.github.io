@@ -1,7 +1,14 @@
+- date: 2018-06-20
+  title: "7 More Languages in 7 Weeks: Elixir, Day 3"
+  url: https://attending.io/events/computation-club-seven-more-languages-in-seven-weeks-elixir-day-3
+  plans: https://groups.google.com/d/msg/london-computation-club/Mlg0Yg0H-o4/L2uReM3CBAAJ
+  book: "7 More Languages in 7 Weeks"
+
 - date: 2018-06-05
   title: "7 More Languages in 7 Weeks: Elixir, Day 2"
   url: https://attending.io/events/computation-club-seven-more-languages-in-seven-weeks-elixir-day-2
   plans: https://groups.google.com/forum/#!topic/london-computation-club/xQSYMUWawY8
+  write_up: https://github.com/computationclub/computationclub.github.io/wiki/7ML7W-Elixir-Day-2-Controlling-Mutations
   book: "7 More Languages in 7 Weeks"
 
 - date: 2018-05-22
