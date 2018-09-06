@@ -3,6 +3,7 @@
   url: https://attending.io/events/computation-club-seven-more-languages-in-seven-weeks-minikanren-mobbing-a-thing
   plans: https://groups.google.com/d/msg/london-computation-club/yIORoN1igCs/Vo9ANKlPAgAJ
   book: "7 More Languages in 7 Weeks"
+  write_up: https://github.com/computationclub/computationclub.github.io/wiki/7ML7W-Minikanren-Einsteins-Puzzle
 
 - date: 2018-08-21
   title: "7 More Languages in 7 Weeks: miniKanren (Days 1-3)"
