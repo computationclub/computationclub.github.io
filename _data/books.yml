@@ -7,7 +7,7 @@
   url: https://pragprog.com/book/7lang/seven-more-languages-in-seven-weeks
   blackwells_url: http://affiliates.blackwells.co.uk/scripts/h9x2deco?a_aid=computationclub&desturl=http%3A%2F%2Fbookshop.blackwell.co.uk%2Fbookshop%2Fproduct%2FSeven-More-Languages-in-Seven-Weeks-by-Bruce-Tate-Ian-Dees-Frederic-Daoud-Jack-Moffit%2F9781941222157
   cover_url: /images/books/seven-more-languages.jpg
-  current: true
+  current: false
 
 - title: Types and Programming Languages
   authors:
