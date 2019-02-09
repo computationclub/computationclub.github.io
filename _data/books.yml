@@ -1,3 +1,12 @@
+- title: Physically Based Rendering: From Theory To Implementation
+  authors:
+    - Matt Pharr
+    - Wenzel Jakob
+    - Greg Humphreys
+  url: http://www.pbr-book.org/
+  blackwells_url: http://affiliates.blackwells.co.uk/scripts/h9x2deco?a_aid=computationclub&desturl=http%3A%2F%2Fbookshop.blackwell.co.uk%2Fbookshop%2Fproduct%2FPhysically-Based-Rendering-by-Matt-Pharr-Wenzel-Jakob-editor-Greg-Humphreys%2F9780128006450
+  current: true
+
 - title: Seven More Languages in Seven Weeks
   authors:
     - Bruce Tate
