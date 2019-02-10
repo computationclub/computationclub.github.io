@@ -1,3 +1,14 @@
 <li>
-  &ldquo;<a href="{{ book.url }}">{{ book.title }}</a>&rdquo;, {{ book.authors | array_to_sentence_string }} (<a href="{{ book.blackwells_url }}">buy on Blackwell's</a>)
+  &ldquo;<a href="{{ book.url }}">{{ book.title }}</a>&rdquo;,
+  {% for name in book.authors -%}
+    {% unless forloop.first -%}
+      {% if forloop.last %}
+        and
+      {% else -%}
+        ,
+      {% endif %}
+    {% endunless %}
+    {{ name }}
+  {%- endfor %}
+  (<a href="{{ book.blackwells_url }}">buy on Blackwell's</a>)
 </li>
