@@ -1,3 +1,8 @@
+- date: 2019-04-03
+  title: "Physically Based Rendering: Reflections and Beyond"
+  book: "Physically Based Rendering: From Theory To Implementation"
+  url: https://attending.io/events/computation-club-physically-based-rendering-reflections-and-beyond
+
 - date: 2019-03-12
   title: "Physically Based Rendering: Shading Our Spheres"
   book: "Physically Based Rendering: From Theory To Implementation"
@@ -15,6 +20,7 @@
 
 - date: 2019-01-22
   title: "Representing negative numbers"
+  book: https://codon.com/representations-count
   url: https://attending.io/events/computation-club-representing-negative-numbers
 
 - date: 2018-12-04
