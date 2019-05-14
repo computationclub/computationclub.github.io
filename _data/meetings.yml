@@ -1,3 +1,11 @@
+- date: 2019-06-04
+  title: "TBC"
+
+- date: 2019-05-21
+  url: https://attending.io/events/computation-club-raytracing-show-tell
+  title: "Raytracing Show & Tell"
+  book: "Physically Based Rendering: From Theory To Implementation"
+
 - date: 2019-05-08
   title: "Computation Pub, Spring Sunshine Edition"
   url: https://attending.io/events/computation-pub-spring-sunshine-edition
@@ -25,8 +33,8 @@
 
 - date: 2019-01-22
   title: "Representing negative numbers"
-  book: https://codon.com/representations-count
   url: https://attending.io/events/computation-club-representing-negative-numbers
+  write_up: https://codon.com/representations-count
 
 - date: 2018-12-04
   title: "Festive Show & Tell 2018"
