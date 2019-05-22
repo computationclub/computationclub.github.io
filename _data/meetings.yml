@@ -5,6 +5,7 @@
   url: https://upcoming.org/event/computation-club-raytracing-show-and-tell-7ep355fvo5
   title: "Raytracing Show & Tell"
   book: "Physically Based Rendering: From Theory To Implementation"
+  write_up: https://github.com/computationclub/computationclub.github.io/wiki/Raytracing-Show-and-Tell
 
 - date: 2019-05-08
   title: "Computation Pub, Spring Sunshine Edition"
