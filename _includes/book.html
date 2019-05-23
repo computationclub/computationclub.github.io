@@ -10,5 +10,7 @@
     {% endunless %}
     {{ name }}
   {%- endfor %}
-  (<a href="{{ book.blackwells_url }}">buy on Blackwell's</a>)
+  {% if book.blackwells_url %}
+    (<a href="{{ book.blackwells_url }}">buy on Blackwell's</a>)
+  {% endif %}
 </li>
