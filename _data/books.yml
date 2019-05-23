@@ -1,3 +1,9 @@
+- title: "10 Technical Papers Every Programmer Should Read (At Least Twice)"
+  authors:
+    - Michael Fogus
+  url: http://blog.fogus.me/2011/09/08/10-technical-papers-every-programmer-should-read-at-least-twice/
+  current: true
+
 - title: "Physically Based Rendering: From Theory To Implementation"
   authors:
     - Matt Pharr
@@ -5,7 +11,7 @@
     - Greg Humphreys
   url: http://www.pbr-book.org/
   blackwells_url: http://affiliates.blackwells.co.uk/scripts/h9x2deco?a_aid=computationclub&desturl=http%3A%2F%2Fbookshop.blackwell.co.uk%2Fbookshop%2Fproduct%2FPhysically-Based-Rendering-by-Matt-Pharr-Wenzel-Jakob-editor-Greg-Humphreys%2F9780128006450
-  current: true
+  current: false
 
 - title: Seven More Languages in Seven Weeks
   authors:

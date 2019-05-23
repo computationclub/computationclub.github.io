@@ -53,7 +53,7 @@ layout: default
 </section>
 
 <section id="books">
-  <h2>Books we&rsquo;re reading</h2>
+  <h2>Literature we&rsquo;re reading</h2>
 
   <ul>
     {% assign currently_reading = false %}
@@ -64,11 +64,11 @@ layout: default
     {% endfor %}
 
     {% if currently_reading == false %}
-      <li>We&rsquo;re not currently reading a book together but please <a href="http://computationclub-slack.herokuapp.com/">join us on Slack</a> to suggest your own meeting topics.</li>
+      <li>We&rsquo;re not currently reading anything together but please <a href="http://computationclub-slack.herokuapp.com/">join us on Slack</a> to suggest your own meeting topics.</li>
     {% endif %}
   </ul>
 
-  <h2>Books we&rsquo;ve read</h2>
+  <h2>Literature we&rsquo;ve read</h2>
 
   <ul>
     {% assign books = site.data.books | where:"current", false | sort: "title" %}
@@ -77,7 +77,7 @@ layout: default
     {% endfor %}
   </ul>
 
-  <p>If you buy these books using the Blackwell's links, London Computation Club gets a little kickback via the Blackwell's affiliate programme. We use that kickback to buy copies of the books for our library, to assist members or potential members who otherwise wouldn&rsquo;t be able to afford the book.<p>
+  <p>If you buy any books using the Blackwell's links, London Computation Club gets a little kickback via the Blackwell's affiliate programme. We use that kickback to buy copies of the books for our library, to assist members or potential members who otherwise wouldn&rsquo;t be able to afford the book.<p>
 
 </section>
 
