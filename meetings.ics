@@ -3,7 +3,7 @@ layout: null
 ---
 {% assign meetings = site.data.meetings | sort: 'date' %}BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:http://london.computation.club/
+PRODID:https://london.computation.club/
 BEGIN:VTIMEZONE
 TZID:Europe/London
 BEGIN:STANDARD

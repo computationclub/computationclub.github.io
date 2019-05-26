@@ -1,7 +1,7 @@
 # London Computation Club
 
 This is the web site of the London Computation Club hosted at
-http://london.computation.club/
+https://london.computation.club/
 
 ## Dependencies
 
