@@ -1,11 +1,13 @@
 - date: 2019-06-18
-  title: "10 Technical Papers Every Programmer Should Read (At Least Twice): TBC"
+  url: https://upcoming.org/event/computation-club-10-technical-papers-every-programmer-should-read-at-least-twice-john-hughes-why-functional-programming-matters-3n0kfz5t8o
+  title: "10 Technical Papers Every Programmer Should Read (At Least Twice): John Hughes' \"Why Functional Programming Matters\""
   book: "10 Technical Papers Every Programmer Should Read (At Least Twice)"
 
 - date: 2019-06-04
   url: https://upcoming.org/event/computation-club-10-technical-papers-every-programmer-should-read-at-least-twice-christopher-stracheys-fundamental-concepts-in-programming-languages-ofp8d3lgqq
   title: "10 Technical Papers Every Programmer Should Read (At Least Twice): Christopher Strachey's \"Fundamental Concepts in Programming Languages\""
   book: "10 Technical Papers Every Programmer Should Read (At Least Twice)"
+  write_up: https://github.com/computationclub/computationclub.github.io/wiki/10TPEPSR-Fundamental-Concepts-in-Programming-Languages
 
 - date: 2019-05-21
   url: https://upcoming.org/event/computation-club-raytracing-show-and-tell-7ep355fvo5
