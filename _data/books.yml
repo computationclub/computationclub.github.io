@@ -1,7 +1,7 @@
-- title: Reinforcement Learning: An Introduction
+- title: "Reinforcement Learning: An Introduction"
   authors:
-    - Andrew Barto
-    - Richard S. Sutton
+  - Andrew Barto
+  - Richard S. Sutton
   url: http://www.incompleteideas.net/book/the-book-2nd.html
   current: true
 
