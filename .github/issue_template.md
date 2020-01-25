@@ -1,8 +1,3 @@
-### Todos
-
-- [ ] announce the meeting on Buffer the Friday before if at least 4 are attending
-- [ ] fill out the template below
-
 ### Template
 
 **Where**: location of the hosting venue
@@ -15,3 +10,5 @@ Please react with the following:
 
 * 👍 for I'm coming to this meeting
 * 🎉 if you're also bringing snacks
+
+Copy latest todos from [wiki](https://github.com/computationclub/computationclub.github.io/wiki/Meeting-Todos)
