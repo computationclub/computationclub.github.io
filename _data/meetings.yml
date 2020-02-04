@@ -1,5 +1,10 @@
+- date: 2020-02-18
+  title: "Reinforcement Learning: An Introduction [meeting 2]"
+  url: https://github.com/computationclub/computationclub.github.io/issues/123
+  # write_up: TODO
+  
 - date: 2020-02-04
-  title: "Reinforcement Learning: An Introduction"
+  title: "Reinforcement Learning: An Introduction [meeting 1]"
   url: https://github.com/computationclub/computationclub.github.io/issues/119
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/Reinforcement-Learning:-An-Introduction-%5BMeeting-1%5D
 
