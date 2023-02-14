@@ -5,8 +5,6 @@ layout: default
 {% assign now = site.time | date: '%F' %}
 {% assign meetings = site.data.meetings | sort: 'date' %}
 <section id="about">
-  <script async defer src="https://computationclub-slack.herokuapp.com/slackin.js?large"></script>
-
   <p>The <b>London Computation Club</b> is a meet-up for people interested in one or more of the following:</p>
 
   <ul>
@@ -39,7 +37,7 @@ layout: default
   {% endfor %}
 
   {% if future_meetings_planned == false %}
-    <li>The next meeting hasn&rsquo;t been announced yet, please join us on <a href="https://computationclub-slack.herokuapp.com/">Slack</a> to learn more and suggest your own topic.</li>
+    <li>The next meeting hasn&rsquo;t been announced yet, please join us on <a href="https://join.slack.com/t/computationclub/shared_invite/zt-1pjbe9txs-uYm8x1uYb~TAdEMQG0PkGQ">Slack</a> to learn more and suggest your own topic.</li>
   {% endif %}
   </ul>
 
@@ -64,7 +62,7 @@ layout: default
     {% endfor %}
 
     {% if currently_reading == false %}
-      <li>We&rsquo;re not currently reading anything together but please <a href="https://computationclub-slack.herokuapp.com/">join us on Slack</a> to suggest your own meeting topics.</li>
+      <li>We&rsquo;re not currently reading anything together but please <a href="https://join.slack.com/t/computationclub/shared_invite/zt-1pjbe9txs-uYm8x1uYb~TAdEMQG0PkGQ">join us on Slack</a> to suggest your own meeting topics.</li>
     {% endif %}
   </ul>
 
