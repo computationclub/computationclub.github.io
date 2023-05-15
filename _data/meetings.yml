@@ -1,7 +1,7 @@
 - date: 2023-05-09
   title: "What Next?"
   url: https://github.com/computationclub/computationclub.github.io/issues/156
-  # write_up: todo
+  write_up: https://github.com/computationclub/computationclub.github.io/wiki/What-Next%3F-May-2023
 
 - date: 2020-03-03
   title: "Reinforcement Learning: An Introduction [meeting 3]"
@@ -12,7 +12,7 @@
   title: "Reinforcement Learning: An Introduction [meeting 2]"
   url: https://github.com/computationclub/computationclub.github.io/issues/123
   write_up: https://github.com/computationclub/computationclub.github.io/wiki/Reinforcement-Learning:-An-Introduction-%5BMeeting-2%5D
-  
+
 - date: 2020-02-04
   title: "Reinforcement Learning: An Introduction [meeting 1]"
   url: https://github.com/computationclub/computationclub.github.io/issues/119
@@ -51,7 +51,7 @@
   url: https://upcoming.org/event/computation-club-10-technical-papers-every-programmer-should-read-at-least-twice-on-understanding-types-data-abstraction-and-polymorphism-ct9trjc17w
   title: "10 Technical Papers Every Programmer Should Read (At Least Twice): \"On Understanding Types, Data Abstraction, and Polymorphism\""
   book: "10 Technical Papers Every Programmer Should Read (At Least Twice)"
-  
+
 - date: 2019-07-23
   url: https://upcoming.org/event/computation-club-10-technical-papers-every-programmer-should-read-at-least-twice-leslie-lamports-time-clocks-and-the-ordering-of-events-in-a-distributed-system-ltou85pzhv
   title: "10 Technical Papers Every Programmer Should Read (At Least Twice): Leslie Lamport's \"Time, Clocks and the Ordering of Events in a Distributed System\""
