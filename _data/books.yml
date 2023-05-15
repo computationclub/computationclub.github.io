@@ -1,9 +1,15 @@
+- title: Opt Art
+  authors:
+    - Robert Bosch
+  url: http://affiliates.blackwells.co.uk/scripts/h9x2deco?a_aid=computationclub&desturl=https%3A%2F%2Fblackwells.co.uk%2Fbookshop%2Fproduct%2FOpt-Art-by-Robert-Bosch%2F9780691164069
+  current: true
+
 - title: "Reinforcement Learning: An Introduction"
   authors:
-  - Andrew Barto
-  - Richard S. Sutton
+    - Andrew Barto
+    - Richard S. Sutton
   url: http://www.incompleteideas.net/book/the-book-2nd.html
-  current: true
+  current: false
 
 - title: "10 Technical Papers Every Programmer Should Read (At Least Twice)"
   authors:
