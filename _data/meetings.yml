@@ -1,7 +1,12 @@
+- date: 2023-07-10
+  title: "Opt Art: Chapter 4"
+  url: https://github.com/computationclub/computationclub.github.io/issues/159
+  # write_up: todo
+
 - date: 2023-06-20
   title: "Opt Art: Chapter 3"
   url: https://github.com/computationclub/computationclub.github.io/issues/158
-  # write_up: todo
+  write_up: https://github.com/computationclub/computationclub.github.io/wiki/Opt-Art-3:-Linear-Optimization-and-the-Lego-Problem
 
 - date: 2023-06-05
   title: "Opt Art: Chapters 1 and 2"
